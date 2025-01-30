@@ -1,0 +1,123 @@
+/* CSS Document */
+
+/* Reset */
+body		{padding:0;margin:0;font:13px Arial,Helvetica,Garuda,sans-serif;*font-size:small;*font:x-small;}
+h1,h2,h3,h4,h5,h6,ul,li,em,strong,pre,code {padding:0;margin:0;line-height:1em;font-size:100%;font-weight:normal;font-style: normal; }
+table		{font-size:inherit;font:100%;}
+ul{list-style:none;}
+img{border:0;}
+p{margin:0}
+
+/* Global */
+body { background-color:#590100; }
+
+/* Headings */
+h1, h2, h3, h4	{font-weight:bold;}
+
+h1	{font-size:40px; margin:0 auto; display:inline; color:#590100;}
+h2	{padding:0; margin:5px 0px 5px 5px; color:#77000F; font-size:30px; display:inline; }
+h3	{font-size: 18px; color: #900; display:inline; }
+h4	{font-size: 15px; color: #000; display:inline; }
+h5	{color:#666; font-weight:bold; margin:5px 0px 5px 5px;}
+h6  {color:#7D0200; font-size: 14px; margin: 0px 5px 0px 0px;}
+h7  {color:#900; font-size: 17px;}
+h8  {color:#7D0200; font-size: 14px;}
+
+/* Text Elements */
+p						{color:#000; margin-bottom:10px;}
+p .left					{	}
+p .right				{	}
+
+a						{text-decoration:none;}
+a:link					{color:#000}
+a:visited				{color:#000	}
+a:active				{color:#000	}
+a:focus					{color:#666}
+a:hover					{color:#666}
+
+
+/* Images */
+
+img:hover {}
+
+/* Lists */
+bullet 					{list-style: disc}
+
+/* Tables */
+
+/* Miscellaneous */
+.black					{color:#000}
+bold 					{font-weight:bold;}
+/* Containers */
+#metanav					{width: 100%; height: 30px; background-color:#300;	}
+
+#metanav-links				{margin:0; padding:0; width:700; height:30px; float:right; }
+	
+	#metanav-links ul					{
+										padding:7px; 
+										float:right;
+										}
+	#metanav-links ul li				{
+										display:inline; 
+										font-size:12px; 
+										color:#FFF; 
+										padding: 0px 5px;
+										}
+	#metanav-links ul li a				{
+										text-decoration: none;
+										}
+	#metanav-links ul li a:link			{
+										color:#FFF
+										}
+	#metanav-links ul li a:visited		{
+										color:#FFF	
+										}
+	#metanav-links ul li a:active		{color:#000}
+	#metanav-links ul li a:focus		{color:#666}
+	#metanav-links ul li a:hover		{color:#666}
+
+#ulm-icon								{width: 32px; float:right;}
+
+#wrapper								{width: 900px; height: 100%; background-color:#FFF; margin: 0 auto;}
+
+#joydeep								{width: 900px; height:45px; background-color: #FFF;}
+
+#banner									{width: 900px; height:150px; background-color: #FFF;}
+
+#body									{width: 900px;  background-color: #FFF;}
+
+
+
+#leftnav								{width: 150px;  background-color: #FFF;float:left; }
+		#leftnav ul 					{margin: 5px 0 0 5px; float:left; }
+		#leftnav ul li					{margin-left:0px; padding-top:10px; font-size:12px; font-weight:bold; }
+		#leftnav ul li a:hover			{color:#999}
+
+		#left-navigation-panel ul li img {padding-top:40px;		}
+
+
+#maindisplay							{float: left; width: 550px; background-color: # CCC;  border-right: 1px #000 				
+										solid; border-left: 1px #000 solid;}
+#rightpanel								{width: 195px; background-color: #FFF; float:left; margin-left: 3px}
+#rightpanel a							{color:#7D0200;}
+#rightpanel a:hover					{color:#666}
+#topnav									{width: 550px; height:35px; margin: 0; background-color:#CCC; }
+
+		#topnav ul						{margin: 0px auto; padding:5px 5px 5px 5px; text-align:center;	}
+		#topnav ul li					{padding:0 30px; display:inline; font-size:12px; font-weight:bold; 				}
+		#topnav ul li a:hover			{color:#999}			
+
+#centertext								{background-color: #FFF; clear:all; padding: 10px 10px 10px 10px; }
+
+#centertext a						{text-decoration:none;}
+#centertext a:link					{color:#900}
+#centertext a:visited				{color:#900	}
+#centertext a:active				{color:#000	}
+#centertext a:focus					{color:#666}
+#centertext a:hover					{color:#666}
+
+#footer									{width: 900px; height:15px; background-color: #FFF; margin: 0 auto; clear:both; margin:0; border-top:1px #999 solid;
+										text-align:center; padding:0px; margin:0;} 
+
+
+

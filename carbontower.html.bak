@@ -1,0 +1,180 @@
+<html><!-- InstanceBegin template="/Templates/mylaboratory.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<title>Plant Ecology at ULM</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+        
+</head> 
+
+<body>
+<div id="metanav">
+	<div id="ulm-icon">
+		<img src="images/ULM-icon.jpg"  alt="ULM">
+	</div>
+
+	<div id="metanav-links"> 
+	   	<ul>
+            	<li><a href="http://ulm.edu/biology/">Department of Biology</a></li>
+                <li><a href="http://ulm.edu/biology/faculty.html">Faculty</a></li>
+                <li><a href="http://ulm.edu/biology/undergraduate-program.html">Undergraduate Program</a></li>
+                <li><a href="http://ulm.edu/biology/graduate-program.html">Graduate Program</a></li>
+                <li><a href="http://ulm.edu/biology/student-groups.html">Student Groups</a></li>
+                <li><a href="http://ulm.edu/biology/browse-on-the-bayou.html">Browse on the Bayou</a></li>
+        </ul>
+	</div>
+</div>
+
+
+<div id="wrapper">
+    
+		<div id="joydeep">
+			<h1 class="black">dr. joydeep </h1> <h1> bhattacharjee </h1>
+</div>
+            
+		<div id="banner">
+  <img src="images/tree_canopys.jpg" width="900" height="150" alt="Tree Canopy" /></div>
+            
+		<div id="body"> 
+            
+          <div id="leftnav">
+                      <ul>
+                          <li><a href="index.html"> HOME</a></li> 
+                          <li><a href="MyLab/mylaboratory.html">LABORATORY</a></li> 
+                          <li><a href="carbontower.html">CARBON TOWER</a></li>
+						  <li><a href="phenocam.html">PHENOCAM</a></li>
+                          <li><a href="ouchita.html">OUACHITA WMA</a></li>
+                          <li><a href="cabs_home.html">BIOLOGICAL STATION</a></li>
+                          <li><a href="wrec.html">WREC</a></li>
+                          <li><a href="gallery.html">GALLERY</a></li>
+                          <li><a href="links.html">LINKS</a></li>
+                          <br>
+                          <br>
+                          <li> <img src="images/ULM Circle Logo.jpg" width="119" height="118" alt="University of Louisiana at Monroe"> </li>
+                           <li> <img src="images/ulm-warhawks.jpeg" width="125" height="85" alt="ULM"></li>
+                      </ul>
+    </div>
+			<!-- InstanceBeginEditable name="Main" -->
+			<div id="maindisplay">
+			  <div id="centertext">
+			    <h2>Carbon Tower</h2>
+				<p><h3>Background</h3>
+				<p><br>Global climate change continues to be an ever-present issue affecting multiple facets of nature. The monitoring of gases such as CO2 and other greenhouse gases has become crucial in understanding the driving forces behind climate change. It is a generally-accepted fact that anthropogenic emission of CO2 is affecting the carbon cycle, but other processes also affect this cycle in both beneficial and detrimental capacities. Photosynthesis and respiration by plants play a pivotal role in the carbon cycle and have to potential to both remove and emit greenhouse gas such as CO2. Monitoring the gas exchange between vegetation and the atmosphere from multiple locations globally can allow for more reliable climate change forecasts to be formulated and implemented. The Eddy Covariance method can be implemented for monitoring gas exchange of a vegetated area and the atmosphere. This method requires the use of sensors that are able to measure the flux of gasses within the atmosphere and determines the exchange rates and amounts of gasses over natural ecosystems.
+				<p> Louisiana is the 33rd state to implement a tower to monitor gas exchange and is the very first tower to be built in Louisiana for this purpose. The data collected from this tower will become part of a national database ran by the AmeriFlux network. The AmeriFlux network gathers all appropriate and acceptable data from towers across North and South America for interpretation and application into climate models. The data gathered from the ULM flux tower will not only put ULM on a national and even global map, but the entire state of Louisiana as well. This type of research is usually undertaken at the Ph.D.  level in universities such as Duke, UC Berkeley, and Harvard. The fact that ULM has joined in this type of research in the ranks of these university attests to the potential housed in this state and university.
+			
+				</p></br>
+				<p><h3>Site Description</h3>
+				<p><br> ULM's flux tower is located in the heart of the Russell Sage Wildlife Management Area. Surrounded by bottomland hardwood forest tress that are very well-established in their growth, the sensors on the tower obtain accurate readings of the area. The clay soil at the site is also representative of Russell Sage's bottomland hardwood forest location and the site floods with a few feet of water during the winter season.
+				</p></br>
+				
+				<p> Below is an image of the aerial view of the site:
+				
+				<p><img src="images/Site_Aerial.jpg" width="530" height="485" alt="Aerial Site" />
+				
+				<p><h3>Tower Construction</h3>
+				<p><br>In July 2013, a 120 foot tower was constructed in the Russell Sage Wildlife Management Area by <a href="https://plus.google.com/112959845910092569716/about?gl=us&hl=en">Bleu Skies Tower Services, LLC.</a> Thereafter, it was outfitted with sensors capable of monitoring carbon flux of an area. Multiple sensors are positioned on and around the tower to allow for continuous monitoring of variables such as the flux of carbon, solar radiation, temperature, rainfall, and soil moisture. A table of the sensors and their use as well as a image of the tower with positions can be found below.</p></br>
+				<p>Below is an image of the Tower with sensor positions:
+				
+				<p><img src="images/Tower with Labels.jpg" width="530" height="620" alt="Labelled Tower">
+				
+				<p><h3>Tower Instruments</h3>
+				<p>
+				<p><table border="1">
+				<tr>
+				<th> Sensor </th>
+				<th> Description </th>
+				<th> Measurement </th>
+				</tr>
+				<tr>
+				<td> IRGASON </td>
+				<td> CO2 and H20 Open-Path Gas Analyser with Integrated 3D Sonic Anemometer </td>
+				<td>Absolute densities of CO2 and H20 and multiple wind components</td>
+				</tr>
+				<tr>
+				<td> EC100 </td>
+				<td> Electronics platform </td>
+				<td> Analyses of IRGASON data </td>
+				</tr>
+				<tr>
+				<td> NR-Lite 2 </td>
+				<td> Net Radiometer </td>
+				<td> Incoming and outgoing radiation of both short and long wave radiation</td>
+				</tr>
+				<tr>
+				<td> PQS1 </td>
+				<td> Quantum sensor </td>
+				<td> Photosynthetically Active Radiation (PAR) </td>
+				<tr>
+				<td> HC2S3 </td>
+				<td> Relative humidity and temperature probe </td>
+				<td> Relative humidity and temperature </td>
+				</tr>
+				<tr>
+				<td> WXT520 </td>
+				<td> All-in-one weather transmitter </td>
+				<td> Wind speed, wind direction, precipitation, barometric pressure, temperature and relative humidity </td>
+				</tr>
+				<tr>
+				<td> TE525 </td>
+				<td> Tipping bucket rain gauge </td>
+				<td> Total rainfall </td>
+				</tr>
+				<tr>
+				<td> LWS </td>
+				<td> Leaf Wetness Sensor </td>
+				<td> Presence and amount of water </td>
+				</tr>
+				<tr>
+				<td> HFP01SC </td>
+				<td> Self-Calibrating Soil Heat Flux Sensor </td>
+				<td> Heat flux in the soil </td>
+				</tr>
+				<tr>
+				<td> CS616 </td>
+				<td> Water Content Reflecto-meter </td>
+				<td> Volumetric water content of soil </td>
+				</tr>
+				<tr>
+				<td> TCAV </td>
+				<td> Averaging Soil Thermocouple Probe </td>
+				<td> Average temperature of the soil </td>
+				</tr>
+				</table>
+			    <p><br>
+		        With confirming trends in global warming, it is crucial to closely monitor the cycle of major greenhouse gases (GHG) in the atmosphere. In addition to several forms of anthropomorphic generation of CO2, the primary GHG, several other biogeochemical processes are heavily involved in the cycle of carbon dioxide in the terrestrial ecosystems of this planet. Such processes include photosynthesis (1, 2), respiration by plants (3), microbial respiration (4), leaching losses (5), erosion (6), etc. Many of these natural processes have been altered over the several centuries with human appropriation and modification of these natural processes, resulting in imbalance of the net carbon fluxes within ecosystems (7). However, recent research has revealed that studying inter-annual dynamics of atmospheric-terrestrial CO2 exchange can shed light on the net carbon offset in a relatively large area (7). Therefore, more carbon flux measurement sites are being established covering major types of vegetation so that we have a better understanding of carbon exchange within each of these vegetation types. Further, data from these individual sites along with other monitoring sites across the globe (CarboEurope, CarboAfrica, ChinaFlux, JapanFlux, ThaiFlux, AsiaFlux, OzFlux, etc.), will help us make climate change forecasts more reliable and formulate management recommendations for land managers to efficiently manage forested ecosystems and perhaps provide policy makers with evidence to amend or redefine certain existing environmental policies.</p>
+			    <p>With growing awareness about changing climate among our students, we strive to improve the perception of the change and its impact on the planet as a whole, by incorporating examples from global studies on climate change in both our undergraduate and graduate courses at ULM. Classroom discussions about climate change become more relevant and meaningful when discussed in light of several interconnected discipline such as environmental, atmospheric and ecological sciences. ULM fosters full support of undergraduate learning and research opportunities. While trying to improve the field and laboratory experiences that expose students to the understanding of climate change, it would be an important step forward to introduce our students to the role of gaseous exchange, primarily CO2, between terrestrial (forested) and atmospheric systems. Ecosystem CO2 exchange is comprised of fluxes associated with assimilatory and respiratory processes. Timing and amplitude of these components determine seasonal patterns of net CO2 flux (8). Major factors affecting the seasonal course and amount of CO2 exchange depends on seasonal differences in leaf-area index, physiological capacity, meteorological conditions and the length of the growing season of the forest vegetation (9).</p>
+			    <p>Setting up a CO2 flux monitoring system in this part of the state and will broaden the horizons of the students not only at ULM but also in the region, as facilities for carbon monitoring in accordance with the AmeriFlux do not exist in the state of Louisiana or in the broader region (including Arkansas and Mississippi, see Figure 1). AmeriFlux is a scientific organizational network that provides continuous observations of ecosystem level exchanges of CO2, water, energy and momentum spanning diurnal, synoptic, seasonal, and inter-annual time scales and currently composed of sites from North America, Central America, and South America. By contributing data collected at our site to Ameriflux, we will be contributing not only to the understanding and implications of the carbon fluxes at the local and regional levels, but also to the national and global metadata analyses.</p>
+			    <p>Bottomland hardwood forests (BHF, Rarity Rank: S4/G4G5) ecosystems in the South-Eastern US have been called as &quot;ecosystem in crisis&quot; (10). One of the most important factors that determines the structure and functioning of these BHFs is the floodplain hydrology (11). Flood pulses are characterized by the wet and dry cycles and are responsible for maintaining proper ecosystem functions including maintenance of water quality, productive habitat for a variety of fish and wildlife species, and regulation of flooding and stream recharge. The periodicity and intensity of flooding closely dictates the vegetation type, with several species highly adapted to fluctuations water levels and highly anoxic conditions in the bottomlands. Further, anoxic conditions in these BHFs are one of the most important factors in the evolution of vegetation as these species must conduct various life processes to thrive under such conditions. However, with water-control structures in most bayous and rivers, the hydrological characteristics have been heavily disturbed and records indicate that about 80% of the BHFs in the southern US have been lost, from the mid-1950's to the mid-1970's. Today, Louisiana has the greatest coverage of remaining BHF in the region (12). While we universally accept BHF as a novel ecosystem, there is paucity of data on the net ecosystem CO2 exchange (NEE) in this ecosystem. It is an important step to quantify the net carbon storage by forests to validate estimates of carbon sequestration and in assessing the possible role of ecosystems in offsetting fossil fuel emissions (13). Therefore, we propose setting up a continuous CO2 flux monitoring system that will quantify the exchange of carbon and energy of the ecosystem, measure key meteorological variables and supplementary data describing location, vegetation and climate of the site. This will be an addition to the national and international database on Carbon flux, and help us understand the role of BHF in the present climate change scenario. </p>
+              </div>
+		    </div>
+			<!-- InstanceEndEditable -->
+			<div id="rightpanel"> 
+				<h2> News </h2>
+				<h5> March 8, 2014
+				<h6><a href="http://www.laacademy.org/"> Plant Lab Grad Students Matthew and Jared win best oral presentation at Louisiana Academy of Sciences Annual Meeting</h6>
+				<h5> February 1, 2014 </h5>
+				<h6><a href="http://www.lnps.org/index_files/News.htm"> Plant Lab Member Matthew Herron gives presentation at the LNPS Annual 2014 Winter Meeting and appears in Newsletter</h6>				
+				<h5>September 3, 2013</h5>
+				<h6><a href="Files/ULM Graduate Receives Grant to Study Plant Ecology - MyArkLaMiss.com - KTVE NBC 10 - KARD FOX 14 - Your homepage for the latest News, Weather and Sports in the ArkLaMiss!.pdf">Plant Lab Member Jenae' Clay appears in ArkLaMiss News!</a></h6>
+				<h5>December 2012</h5>
+                <h6><a href="Files/Wakefield_2012.pdf">Jessica Wakefield and Dr. B publish "Effect of Air Pollution on Chlorophyll Content and Lichen Morphology in Northeastern Louisiana" in Evansia</a></h6>
+                <h5>December 6, 2012</h5>
+			  <h6><a href="http://www.thenewsstar.com/article/20121204/NEWS01/121204016/ULM-biology-professor-awarded-grant-fund-wildlife-habitat-research">Dr. Joydeep awarded grant to fund wildlife research</a></h6>
+				<h5>October 11, 2012</h5>
+				<h6> Matt Reid has winning photos in Black Bayou Lake Photo Contest</h6>
+			  <h5> September 7, 2012 </h5>
+				<h6> Undergraduates Simi, Ray and Jenae' join the plant lab!</h6>
+			  <h5>June 12, 2012</h5>
+			  <h6>Matthew Herron and Jared Streeter join the plant lab!</h6>
+			  <h5>March 15, 2012</h5>
+                <h6><a href="http://www.ulm.edu/universityrelations/news/mar12/biology.html">Stephanie Allen and Cathy Ho win 1st place at Louisiana Academy of Sciences Poster Session</a></h6>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+		  </div>
+		  <div id="footer">
+        	<p>Copyright 2012 </p>
+        	</div>     
+                   
+		</div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

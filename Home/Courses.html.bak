@@ -1,0 +1,150 @@
+<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<title>Plant Ecology at ULM</title>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+        
+</head> 
+
+<body>
+<div id="metanav">
+	<div id="ulm-icon">
+		<img src="../images/ULM-icon.jpg"  alt="ULM">
+	</div>
+
+	<div id="metanav-links"> 
+	   	<ul>
+            	<li><a href="http://ulm.edu/biology/">Department of Biology</a></li>
+                <li><a href="http://ulm.edu/biology/faculty.html">Faculty</a></li>
+                <li><a href="http://ulm.edu/biology/undergraduate-program.html">Undergraduate Program</a></li>
+                <li><a href="http://ulm.edu/biology/graduate-program.html">Graduate Program</a></li>
+                <li><a href="http://ulm.edu/biology/student-groups.html">Student Groups</a></li>
+                <li><a href="http://ulm.edu/biology/browse-on-the-bayou.html">Browse on the Bayou</a></li>
+        </ul>
+	</div>
+</div>
+
+
+<div id="wrapper">
+    
+		<div id="joydeep">
+			<h1 class="black">dr. joydeep </h1> <h1> bhattacharjee </h1>
+</div>
+            
+		<div id="banner">
+  <img src="../images/banner 01.jpg" width="900" height="150" alt="Black Bayou" /></div>
+            
+		<div id="body"> 
+            
+          <div id="leftnav">
+                      <ul>
+                          <li><a href="../index.html"> HOME</a></li> 
+                          <li><a href="../MyLab/mylaboratory.html">LABORATORY</a></li> 
+                          <li><a href="../carbontower.html">CARBON TOWER</a></li>
+						  <li><a href="phenocam.html">PHENOCAM</a></li>
+                          <li><a href="../ouchita.html">OUACHITA WMA</a></li>
+                          <li><a href="../cabs_home.html">BIOLOGICAL STATION</a></li>
+                          <li><a href="../wrec.html">WREC</a></li>
+                          <li><a href="../gallery.html">GALLERY</a></li>
+                          <li><a href="../links.html">LINKS</a></li>
+                          <br>
+                          <br>
+                          <li> <img src="../images/ULM Circle Logo.jpg" width="119" height="118" alt="University of Louisiana at Monroe"> </li>
+                           <li> <img src="../images/ulm-warhawks.jpeg" width="125" height="85" alt="ULM"></li>
+                      </ul>
+    </div>
+			<!-- InstanceBeginEditable name="Main" -->
+			<div id="maindisplay">
+			  <div id="topnav">
+			    <ul>
+			      <li><a href="professional.html">Professional Preparation</a></li>
+			      <li><a href="past.html">Past Appointments</a></li>
+			      <li><a href="Publications.html">Publications</a></li>
+			      <li><a href="Courses.html">Courses Taught</a></li>
+			      <li><a href="Other.html">Collaborators</a></li>
+				  <li><a href="Grants.html">Grants</a></li>
+		        </ul>
+		      </div>
+			  <div id="centertext">
+			    
+                <h2>Courses Taught</h2> <p> <br>
+                 <bold>THE LIVING WORLD</bold> (BIOL 1001): A non-majors’ course covering basic scientific and 
+                  biological principles with an emphasis on the structure and processes of organisms. The 
+                  course also includes a survey of the major types of living organisms. 
+                  
+                </p>
+				<p><bold>PRINCIPLES OF BIOLOGY II</bold> (BIOL 1022): A majors’ course dealing with natural 
+                  selection, population genetics, speciation, adaptation, phylogeny, co-evolution, 
+                  extinction, ecological interactions, human evolution and its ecological impact.  
+                  
+                </p>
+                <p><bold>PRINCIPLES OF BIOLOGY II LABORATORY</bold> (BIOL 1023):  A laboratory designed to 
+                accompany Biology 1022. 
+				</p>
+                
+				<p><bold>ECONOMIC BOTANY</bold> (BIOL 2050): The history and applied uses of plants as food, fibers, lumber, drugs, and related commodities.
+				
+				
+				</p>
+				<p><bold>ECOLOGICAL METHODS</bold> (BIOL 4004): I have revised this course, incorporating recent 
+                  advents in the subject, including a general understanding of the computational/modeling 
+                  aspects in ecology. 
+                  
+                </p>
+                <p><bold>PLANT COMMUNITY ECOLOGY</bold> (BIOL 4044): This course essentially deals with the 
+                  study of plant populations and communities and their habitat with emphasis on the 
+                  communities of the south central US. I will be creating a special section in the syllabus 
+                  that talks about the importance of wetland plant communities and their importance in 
+                maintaining the high-level of biodiversity seen in the southwestern US. </p>
+                <p><bold>ECOSYSTEM AND COMMUNITIES</bold> (BIOL 4113): This is a university capstone course. I have developed this course and am teaching it once every two years (Spring 2010 and Spring 2012). The major emphasis of this course is to tie the concepts of human mediated ecosystem changes globally.
+				
+				</p>
+				<p><bold>RESEARCH METHODS</bold> (BIOL 5005): Principles underlying biological research. Emphasis on the scientific method, statistical analysis and their application in biological investigation. Prerequisite: Credit or registration in 5006
+				
+				</p>
+				<p><bold>GRADUATE SEMINAR</bold> (BIOL 5007): Redesigned this course as a two-part process. 
+                  During the first part students present a talk on a topic of their choice and are peer 
+                  evaluated. In the second part they are required to talk on a topic relevant to general 
+                  biology. Students were also asked to critique two scientific papers.  
+                  
+                </p>
+                <p><bold>PLANT SYSTEMATICS</bold> (BIOL 5034): I developed and taught this course in the Fall of 
+                  2008. The main components of taxonomy:  description, identification, nomenclature, 
+                  and classification were discussed, including in-depth evaluation of 10 plant orders. 
+                  
+                </p>
+<p>&nbsp;</p>
+		      </div>
+		    </div>
+			<!-- InstanceEndEditable -->
+			<div id="rightpanel"> 
+				<h2> News </h2> 
+				<h5> March 8, 2014
+				<h6><a href="http://www.laacademy.org/"> Plant Lab Grad Students Matthew and Jared win best oral presentation at Louisiana Academy of Sciences Annual Meeting</h6>
+				<h5> February 1, 2014 </h5>
+				<h6><a href="http://www.lnps.org/index_files/News.htm"> Plant Lab Member Matthew Herron gives presentation at the LNPS Annual 2014 Winter Meeting and appears in Newsletter</h6>
+				<h5>September 3, 2013</h5>
+				<h6><a href="../Files/ULM Graduate Receives Grant to Study Plant Ecology - MyArkLaMiss.com - KTVE NBC 10 - KARD FOX 14 - Your homepage for the latest News, Weather and Sports in the ArkLaMiss!.pdf">Plant Lab Member Jenae' Clay appears in ArkLaMiss News!</a></h6>
+				<h5>December 2012</h5>
+                <h6><a href="../Files/Wakefield_2012.pdf">Jessica Wakefield and Dr. B publish "Effect of Air Pollution on Chlorophyll Content and Lichen Morphology in Northeastern Louisiana" in Evansia</a></h6>
+                <h5>December 6, 2012</h5>
+			  <h6><a href="http://www.thenewsstar.com/article/20121204/NEWS01/121204016/ULM-biology-professor-awarded-grant-fund-wildlife-habitat-research">Dr. Joydeep awarded grant to fund wildlife research</a></h6>
+				<h5>October 11, 2012</h5>
+				<h6> Matt Reid has winning photos in Black Bayou Lake Photo Contest</h6>
+			  <h5> September 7, 2012 </h5>
+				<h6> Undergraduates Simi, Ray and Jenae' join the plant lab!</h6>
+			  <h5>June 12, 2012</h5>
+			  <h6>Matthew Herron and Jared Streeter join the plant lab!</h6>
+			  <h5>March 15, 2012</h5>
+                <h6><a href="http://www.ulm.edu/universityrelations/news/mar12/biology.html">Stephanie Allen and Cathy Ho win 1st place at Louisiana Academy of Sciences Poster Session</a></h6>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+		  </div>
+		  <div id="footer">
+        	<p>Copyright 2012 </p>
+        	</div>     
+                   
+		</div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>
