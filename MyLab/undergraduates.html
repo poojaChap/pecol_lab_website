@@ -4,6 +4,105 @@
 	<title>Plant Ecology at ULM</title>
 	<link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen" />
 
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #metanav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: #333; */
+            padding: 10px 20px;
+        }
+
+        #metanav-links ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #metanav-links ul li {
+            margin-left: 20px;
+        }
+
+        #metanav-links ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #joydeep {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        #banner {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        #leftnav {
+            grid-column: 1 / 2;
+        }
+
+        #leftnav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #leftnav ul li {
+            margin-bottom: 10px;
+        }
+
+        #leftnav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #maindisplay {
+            grid-column: 2 / 3;
+        }
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #rightpanel {
+            grid-column: 3 / 4;
+        }
+
+        #footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+
+        
+
 </head>
 
 <body>
@@ -45,8 +144,8 @@
 					<li><a href="../carbontower.html">CARBON TOWER</a></li>
 					<li><a href="phenocam.html">PHENOCAM</a></li>
 					<li><a href="../ouchita.html">OUACHITA WMA</a></li>
-					<li><a href="../canp.html">BIOLOGICAL STATION</a></li>
-					<li><a href="../wrec.html">WREC</a></li>
+					<li><a href="../canp.html">Dr. CHAELES ALLEN NATURE PRESERVE</a></li>
+					<!-- <li><a href="../wrec.html">WREC</a></li> -->
 					<li><a href="../gallery.html">GALLERY</a></li>
 					<li><a href="../links.html">LINKS</a></li>
 					<br>
@@ -130,6 +229,44 @@
 						</div>
 					</div>
 
+
+
+					<!-- RHEANNA-->
+					<img src="../images/Rheanna.png" width="270" height="350" alt="" />
+					</p>
+					<div class="student-profile">
+						<h3 class="student-name">Rheanna Wesley</h3>
+
+						<div class="bio-section">
+							<p class="bio-text"><br>Sophomore Biology major at the University of Louisiana at Monroe. Current lab project focuses on stomatal density.</p>
+						</div>
+						
+						<div class="research-section">
+							<h4 class="section-heading">Research Focus:</h4>
+							<ul class="research-interests">
+								<li> <br>- Stomatal density analysis</li>
+							</ul>
+						</div>
+						
+						<div class="projects-section">
+							<h4 class="section-heading"><br>Lab Activities:</h4>
+							<div class="project-item">
+								<h5 class="project-title"><br>Stomatal Density Analysis</h5>
+								<p class="project-desc">Investigating plant pore structures in different species</p>
+							</div>
+						</div>
+						
+						<div class="current-work">
+							<h4 class="section-heading">Current Initiative: </h4>
+							<p class="highlight-text"><br>Conducting microscopic analysis of plant stomata structures</p>
+						</div>
+					</div>
+
+
+
+
+
+
 					<!-- BROCK-->
 					<img src="../images/Brock.png" width="270" height="350" alt="" />
 					</p>
@@ -172,113 +309,29 @@
 					</div>
 
 
-					<!-- <p>
-						<h8>Subash Sapkota</h8> Subash is a senior undergraduate student from Nepal, pursuing a dual
-						major in Biology and Mathematics. With climate change accelerating at an unprecedented rate,
-						Subash is passionate about ensuring that our efforts to monitor its impact on ecosystems evolve
-						just as quickly. He is particularly interested in leveraging modern tools like remote sensing to
-						study and protect the environment. His work focuses on applying multispectral and hyperspectral
-						remote sensing for ecosystem assessment, as well as integrating machine learning to make
-						ecosystem monitoring faster, more accurate, and more effective.
-					</p>
-
-					<p>
-						<bold>Research Interests:</bold>
-					</p>
-					Remote Sensing and Ecosystem Assessment
-					Machine Learning for Environmental Monitoring
-					Biodiversity and Functional Diversity Analysis
-					Forest Dynamics and Regeneration Potential
-					Climate Change Impact on Ecosystems
-
-					<p>
-						<bold><br>Research Experience:</bold>
-					</p>
-					<ul>
-						<li>
-							<bold>Plant Ecology Lab, University of Louisiana Monroe (ULM):</bold> Using UAV imagery and
-							machine learning to identify aquatic plant species and track the spread of dominant species
-							throughout their phenological cycles.
-						</li>
-						<li>
-							<bold><br>Summer 2023 Internship, University of Notre Dame Environmental Research Center
-								(UNDERC):</bold> Investigating the environmental drivers of seedling distribution in the
-							Northwoods forest, with a focus on how ecological and topographical factors shape seedling
-							patterns.
-						</li>
-						<li>
-							<bold>Summer 2024 Independent Project, UNDERC:</bold> Analyzing NEON hyperspectral data to
-							assess taxonomic, phylogenetic, and functional diversity in the Northwoods forest, using
-							advanced spectral-biodiversity analysis techniques to understand forest dynamics better.
-						</li>
-					</ul>
-
-					<p>
-						<bold>Current Project:</bold> Subash is collaborating on a project that integrates LiDAR data to
-						study forest stands, with a particular emphasis on vertical stratification and regeneration
-						potential.
-					</p>
-
-					<p>
-						<bold>Outside of Academics:</bold> Subash enjoys listening to Nepalese music and the occasional
-						country song. He also loves hiking, playing chess, and watching sports and movies in his free
-						time.
-					</p> -->
-
-
-
-					<!-- MAKAYLA
-					<p><img src="../images/Melissa.png" width="230" height="200" alt="Melissa Bloch" /></p>
-					<p>
-						<h8>Makayla Holman</h8> Makayla is a native of Monroe, Louisiana and is a senior undergraduate
-						majoring in Biology with EEB concentration and a minor in English. Makayla’s curiosity is piqued
-						by epiphyte plants and how their subtle interaction with their environment impacts it. Her
-						current project involves using vertical profiling temperature data from the US-ULM Carbon Flux
-						Tower in a Bottomland Hardwood Forest in RussellSage Wildlife Management Area, to observe how
-						temperatures gradients impact tree phenology.
-					</p>
-
-					<p>
-						<bold>Research Interests:</bold>
-					</p>
-					Ecosystem Level Ecology
-
-					Land-Use and Land-Cover Mapping
-					Biodiversity and Conservation
-					Forest Canopy Spectral Dynamics
-					Forest Phenology
-					Global Change Ecology and Management
-
-					<P> Current Project:
-						Melissa is assessing the optical-phenological variability in the bottomland hardwood forest at
-						Russell Sage WMA, the site of the Carbon Flux Tower. Using an unmanned aerial vehicle (UAV) and
-						spectral cameras she has already mapped species distribution based on spectral profiles of
-						delineated crowns. She is currently examining the seasonality of various spectral and
-						biophysical indices. She is looking for connections between the representation of canopy
-						spectral properties, weather conditions and carbon flux.
-
-					</p> -->
 
 				</div>
 			</div>
 			<!-- InstanceEndEditable -->
 			<div id="rightpanel">
-				<h2> News </h2>
-				<h5> Jan, 2024 </h5>
-				<h6> Plant Ecology Lab welcomes two new members - Grant Erbelding and Joshua Russell</h6>
+				<h2> More info </h2>
+				<!-- <h5> Jan, 2024 </h5>
+				<h6> Plant Ecology Lab welcomes two new members - Grant Erbelding and Joshua Russell</h6> -->
 				<p />
-				<h5> December 2023</h5>
-				<h6> Graduate Student Bibek Kandel defends his MS thesis and leaves for Virginia Tech for his Ph.D.</a>
+				<h5> </h5>
+				<h6> - Graduate Student Bibek Kandel defends his MS thesis and leaves for Virginia Tech for his
+					Ph.D.</a>
 				</h6>
-				<h5> October, 2023</h5>
-				<h6> Lab member Bibek Kandel (grad) wins the Best poster presentation award at the ULM Student Research
+				<h5> </h5>
+				<h6> - Lab member Bibek Kandel (grad) wins the Best poster presentation award at the ULM Student
+					Research
 					Symposium.</a>
 					<h6>
-						<h6> Lab member Subash Sapkota (undergrad) wins the Best poster presentation award
+						<h6> - Lab member Subash Sapkota (undergrad) wins the Best poster presentation award
 							(undergrad-level) at the ULM Student Research Symposium.</a>
 							<h6>
-								<h5> September, 2023</h5>
-								<h6> Subash Sapkota (undergrad) travels to Madison, Wisconsin to present research at a
+								<h5> </h5>
+								<h6> - Subash Sapkota (undergrad) travels to Madison, Wisconsin to present research at a
 									NEON GLUG workshop. He was the only undergtraduate selected to present his research
 									at this event.</a></h6>
 

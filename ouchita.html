@@ -2,6 +2,105 @@
 <head>
 	<title>Plant Ecology at ULM</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #metanav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: #333; */
+            padding: 10px 20px;
+        }
+
+        #metanav-links ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #metanav-links ul li {
+            margin-left: 20px;
+        }
+
+        #metanav-links ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #joydeep {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        #banner {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        #leftnav {
+            grid-column: 1 / 2;
+        }
+
+        #leftnav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #leftnav ul li {
+            margin-bottom: 10px;
+        }
+
+        #leftnav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #maindisplay {
+            grid-column: 2 / 3;
+        }
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #rightpanel {
+            grid-column: 3 / 4;
+        }
+
+        #footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+
+        
         
 </head> 
 
@@ -27,7 +126,7 @@
 <div id="wrapper">
     
 		<div id="joydeep">
-			<h1 class="black">dr. joydeep </h1> <h1> bhattacharjee </h1>
+			<h1 class="black">Dr. Joydeep </h1> <h1> Bhattacharjee </h1>
 </div>
             
 		<div id="banner">
@@ -42,8 +141,8 @@
                           <li><a href="carbontower.html">CARBON TOWER</a></li>
 						  <li><a href="phenocam.html">PHENOCAM</a></li>
                           <li><a href="ouchita.html">OUACHITA WMA</a></li>
-                          <li><a href="canp.html">BIOLOGICAL STATION</a></li>
-                          <li><a href="wrec.html">WREC</a></li>
+                          <li><a href="canp.html">Dr. CHAELES ALLEN NATURE PRESERVE</a></li>
+                          <!-- <li><a href="wrec.html">WREC</a></li> -->
                           <li><a href="gallery.html">GALLERY</a></li>
                           <li><a href="links.html">LINKS</a></li>
                           <br>

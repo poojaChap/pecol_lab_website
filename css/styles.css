@@ -76,7 +76,7 @@ bold 					{font-weight:bold;}
 	#metanav-links ul li a:focus		{color:#666}
 	#metanav-links ul li a:hover		{color:#666}
 
-#ulm-icon								{width: 32px; float:right;}
+#ulm-icon								{width: 32px; float:right; }
 
 #wrapper								{width: 900px; height: 100%; background-color:#FFF; margin: 0 auto;}
 
@@ -118,6 +118,10 @@ bold 					{font-weight:bold;}
 
 #footer									{width: 900px; height:15px; background-color: #FFF; margin: 0 auto; clear:both; margin:0; border-top:1px #999 solid;
 										text-align:center; padding:0px; margin:0;} 
+
+
+
+
 
 
 

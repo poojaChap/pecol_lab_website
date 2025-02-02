@@ -3,6 +3,105 @@
 	<title>Plant Ecology at ULM</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
         
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #metanav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: #333; */
+            padding: 10px 20px;
+        }
+
+        #metanav-links ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #metanav-links ul li {
+            margin-left: 20px;
+        }
+
+        #metanav-links ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #joydeep {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        #banner {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        #leftnav {
+            grid-column: 1 / 2;
+        }
+
+        #leftnav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #leftnav ul li {
+            margin-bottom: 10px;
+        }
+
+        #leftnav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #maindisplay {
+            grid-column: 2 / 3;
+        }
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #rightpanel {
+            grid-column: 3 / 4;
+        }
+
+        #footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+
+        
+
 </head> 
 
 <body>
@@ -27,7 +126,7 @@
 <div id="wrapper">
     
 		<div id="joydeep">
-			<h1 class="black">dr. joydeep </h1> <h1> bhattacharjee </h1>
+			<h1 class="black">Dr. Joydeep </h1> <h1> Bhattacharjee </h1>
 </div>
             
 		<div id="banner">
@@ -42,8 +141,8 @@
                           <li><a href="carbontower.html">CARBON TOWER</a></li>
 						  <li><a href="phenocam.html">PHENOCAM</a></li>
                           <li><a href="ouchita.html">OUACHITA WMA</a></li>
-                          <li><a href="canp.html">BIOLOGICAL STATION</a></li>
-                          <li><a href="wrec.html">WREC</a></li>
+                          <li><a href="canp.html">Dr. CHAELES ALLEN NATURE PRESERVE</a></li>
+                          <!-- <li><a href="wrec.html">WREC</a></li> -->
                           <li><a href="gallery.html">GALLERY</a></li>
                           <li><a href="links.html">LINKS</a></li>
                           <br>
@@ -56,8 +155,8 @@
 			<div id="maindisplay">
 
 			  <div id="centertext">
-			    <p><h2 >ULM BIOLOGICAL STATION</h2>
-				<p><h2>Dr. Charles Allen Nature Preserve</h2></p>
+			    <p><h2 >Dr. Charles Allen Nature Preserve</h2>
+				<!-- <p><h2>Dr. Charles Allen Nature Preserve</h2></p> -->
 			    <p><h3>Background</h3></p>
 					<p>The Charles Allen Nature Preserve is an 80 acre outdoor classroom located in the rolling Ouachita Hills Region near Columbia, Louisiana, about 30 miles from the campus of ULM.
 					<p>The property was donated to ULM in the year 2000 by Dr. Harry Winters in honor of Dr. Charles Allen, a former ULM professor and accomplished botonist in Louisiana. Over the years, Dr. Winters and Dr. Allen have co-authored several books on the plants of Louisiana and the Gulf South, but CABS is arguably one of their greatest contributions to the state. Efforts are currently underway to make CABS more accessible to ULM students and faculty and develop a master plan for the property. In the future, we hope to make CABS a premiere site for researchers through the state and region.
