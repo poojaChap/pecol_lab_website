@@ -119,6 +119,165 @@ bold 					{font-weight:bold;}
 #footer									{width: 900px; height:15px; background-color: #FFF; margin: 0 auto; clear:both; margin:0; border-top:1px #999 solid;
 										text-align:center; padding:0px; margin:0;} 
 
+/*<---after this----->*/
+
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+
+#metanav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: #333; */
+	padding: 10px 20px;
+}
+
+
+
+
+/* Navigation Styling */
+#metanav-links {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+}
+
+#metanav-links ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+#metanav-links ul li {
+	margin: 0 15px;
+}
+
+#metanav-links ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 15px;
+	transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+}
+
+#metanav-links ul li a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+#wrapper {
+	display: grid;
+	grid-template-columns: 200px 1fr 200px;
+	gap: 20px;
+	padding: 20px;
+}
+
+
+
+#joydeep {
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+#banner {
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+#leftnav {
+	grid-column: 1 / 2;
+}
+
+#leftnav ul {
+	list-style: none;
+	padding: 0;
+}
+
+#leftnav ul li {
+	margin-bottom: 10px;
+}
+
+#leftnav ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+#maindisplay {
+	grid-column: 2 / 3;
+
+	float: left; width: 550px; background-color: #CCC;  border-right: 1px #000 				
+	solid; border-left: 1px #000 solid;
+}
+
+
+
+
+
+#gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+#gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#rightpanel {
+	grid-column: 3 / 4;
+}
+
+#footer {
+	grid-column: 1 / -1;
+	text-align: center;
+	padding: 20px;
+	background-color: #333;
+	color: white;
+}
+
+#joydeep,
+#banner {
+	grid-column: 1 / -1;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 15px;
+	background-color: #CCC;
+	/* color: white; */
+	/* color: #590100; */
+	border-radius: 5px;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+
+/* #ulm-icon {       
+	height: 10px; 
+	background-color: #333;
+} */
+
 
 
 
