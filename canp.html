@@ -1,220 +1,167 @@
-<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Plant Ecology at ULM</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
-        
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plant Ecology at ULM – Dr. Charles Allen Nature Preserve</title>
 
-        #metanav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            /* background-color: #333; */
-            padding: 10px 20px;
-        }
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        #metanav-links ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        #metanav-links ul li {
-            margin-left: 20px;
-        }
-
-        #metanav-links ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        #wrapper {
-            display: grid;
-            grid-template-columns: 200px 1fr 200px;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        #joydeep {
-            grid-column: 1 / -1;
-            text-align: center;
-        }
-
-        #banner {
-            grid-column: 1 / -1;
-            text-align: center;
-        }
-
-        #leftnav {
-            grid-column: 1 / 2;
-        }
-
-        #leftnav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        #leftnav ul li {
-            margin-bottom: 10px;
-        }
-
-        #leftnav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        #maindisplay {
-            grid-column: 2 / 3;
-        }
-
-        #gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        #gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        #rightpanel {
-            grid-column: 3 / 4;
-        }
-
-        #footer {
-            grid-column: 1 / -1;
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-    </style>
-
-        
-
-</head> 
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
 
 <body>
-<div id="metanav">
-	<div id="ulm-icon">
-		<img src="images/ULM-icon.jpg"  alt="ULM">
-	</div>
+    <!-- Meta Navigation (loaded via fetch) -->
+    <header id="metanav">
+        <script>
+            fetch('../components/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('metanav').innerHTML = data;
+                });
+        </script>
+    </header>
 
-	<div id="metanav-links"> 
-	   	<ul>
-            	<li><a href="http://ulm.edu/biology/">Department of Biology</a></li>
-                <li><a href="http://ulm.edu/biology/faculty.html">Faculty</a></li>
-                <li><a href="http://ulm.edu/biology/undergraduate-program.html">Undergraduate Program</a></li>
-                <li><a href="http://ulm.edu/biology/graduate-program.html">Graduate Program</a></li>
-                <li><a href="http://ulm.edu/biology/student-groups.html">Student Groups</a></li>
-                <li><a href="http://ulm.edu/biology/browse-on-the-bayou.html">Browse on the Bayou</a></li>
-        </ul>
-	</div>
-</div>
+    <!-- Page Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Left Sidebar -->
+        <aside id="leftnav">
+            <div class="left-images">
+                <img src="../images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe Logo" width="119"
+                    height="118">
+                <img src="../images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85">
+            </div>
+        </aside>
 
 
-<div id="wrapper">
-    
-		<div id="joydeep">
-			<h1 class="black">Dr. Joydeep </h1> <h1> Bhattacharjee </h1>
-</div>
-            
-		<div id="banner">
-  <img src="images/banner_asclepias.jpg" width="900" height="150" alt="White Flowers"></div>
-            
-		<div id="body"> 
-            
-          <div id="leftnav">
-                      <ul>
-                          <li><a href="index.html"> HOME</a></li> 
-                          <li><a href="MyLab/mylaboratory.html">LABORATORY</a></li> 
-                          <li><a href="carbontower.html">CARBON TOWER</a></li>
-						  <li><a href="phenocam.html">PHENOCAM</a></li>
-                          <li><a href="ouchita.html">OUACHITA WMA</a></li>
-                          <li><a href="canp.html">Dr. CHAELES ALLEN NATURE PRESERVE</a></li>
-                          <!-- <li><a href="wrec.html">WREC</a></li> -->
-                          <li><a href="gallery.html">GALLERY</a></li>
-                          <li><a href="links.html">LINKS</a></li>
-                          <br>
-                          <br>
-                          <li> <img src="images/ULM Circle Logo.jpg" width="119" height="118" alt="University of Louisiana at Monroe"> </li>
-                           <li> <img src="images/ulm-warhawks.jpeg" width="125" height="85" alt="ULM"></li>
-                      </ul>
+        <!-- Main Display Area -->
+        <main id="maindisplay">
+
+            <!-- Center Content -->
+            <section id="centertext">
+                <header class="content-header">
+                    <h2><i class="fas fa-tree"></i> Dr. Charles Allen Nature Preserve</h2>
+                </header>
+
+                <section class="content-section">
+                    <h3><i class="fas fa-seedling"></i> Background</h3>
+                    <p>
+                        The <strong>Charles Allen Nature Preserve</strong> is an <strong>80-acre outdoor classroom</strong> located in the rolling <strong>Ouachita Hills Region</strong> near Columbia, Louisiana, about <strong>30 miles from ULM</strong>.
+                    </p>
+                    <p>
+                        The property was <strong>donated to ULM in 2000</strong> by <strong>Dr. Harry Winters</strong>, in honor of <strong>Dr. Charles Allen</strong>, a former ULM professor and <strong>renowned botanist</strong> in Louisiana. Dr. Winters and Dr. Allen have co-authored several books on <strong>Louisiana and Gulf South plant species</strong>, and the <strong>Charles Allen Nature Preserve</strong> serves as one of their greatest contributions to conservation.
+                    </p>
+                    <p>
+                        Efforts are currently underway to <strong>improve accessibility</strong> for students and researchers. The goal is to transform this <strong>biological station</strong> into a <strong>premier research site</strong> for scientists across Louisiana and beyond.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h3><i class="fas fa-paw"></i> 2016 ULM BioBlitz</h3>
+                    <p>
+                        On <strong>October 29, 2016</strong>, ULM <strong>biology students</strong> and faculty organized the <strong>ULM BioBlitz</strong>, an event to showcase the <strong>Charles Allen Nature Preserve</strong>. This student-led event featured <strong>guided hikes</strong> across the rolling Ouachita Hills, allowing participants to <strong>identify as many species as possible</strong>—including <strong>birds, plants, reptiles, amphibians, mammals, and butterflies</strong>.
+                    </p>
+                    <p class="center">
+                        <img src="../images/bioblitz_full.png" alt="ULM BioBlitz Event" width="530" height="338">
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h3><i class="fas fa-clipboard-check"></i> Goals of the BioBlitz</h3>
+                    <ul>
+                        <li>📌 Discover, learn about, and document the <strong>biological diversity</strong> of the <strong>Charles Allen Nature Preserve</strong>.</li>
+                        <li>📌 Educate students and faculty on <strong>natural history</strong> and biodiversity.</li>
+                        <li>📌 Engage both <strong>science and non-science majors</strong> in hands-on outdoor experiences.</li>
+                        <li>📌 Strengthen the <strong>connection between faculty and students</strong> through experiential learning.</li>
+                        <li>📌 Promote <strong>conservation awareness</strong> and research on Louisiana’s biodiversity.</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h3><i class="fas fa-calendar-alt"></i> Event Schedule</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8:00 AM - 10:00 AM</td>
+                                <td>🌅 <strong>Early Bird Hike</strong> (Primary focus: Birds, but all species are included)</td>
+                            </tr>
+                            <tr>
+                                <td>10:30 AM - 1:00 PM</td>
+                                <td>📢 <strong>Welcome Address & Exploration</strong> (Meet the faculty, view live specimens, and tally morning species counts)</td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM - 3:00 PM</td>
+                                <td>🌿 <strong>Nature Hike 1</strong> (Focus: Reptiles, amphibians, and mammal tracks)</td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM - 3:00 PM</td>
+                                <td>🦋 <strong>Nature Hike 2</strong> (Focus: Insects, plants, fungi, and birds)</td>
+                            </tr>
+                            <tr>
+                                <td>3:30 PM - 4:30 PM</td>
+                                <td>📊 <strong>Tally Up & Check Out</strong> (Final species count, awards, and closing remarks)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="content-section">
+                    <h3><i class="fas fa-user-edit"></i> Registration</h3>
+                    <p>
+                        Interested in participating? Click the link below to <strong>register for the 2016 BioBlitz</strong>:
+                    </p>
+                    <p class="center">
+                        <a href="https://docs.google.com/forms/d/1N1ZXvWwiNVWvOhMNeyjsPtS6cSBD_vkvuKZskJlsGVI/viewform" target="_blank" class="registration-link">
+                            📝 <strong>Register Here</strong>
+                        </a>
+                    </p>
+                </section>
+            </section>
+        </main>
+
+
+        <!-- Right Sidebar: News Section -->
+        <aside id="rightpanel">
+            <div class="news-section">
+                <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
+
+                <div class="news-card">
+                    <div class="news-content">
+                        <h3>Conservation Talk</h3>
+                        <p>Dr. Bhattacharjee was invited to speak at the Balipara Foundation Awards in India about the use of UAVs in conservation.</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-content">
+                        <h3>Best Poster Award</h3>
+                        <p>Plant Ecology Lab member, Melissa Bloch, wins Best Poster Award at the Louisiana Association of Professional Biologists.</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-content">
+                        <h3>Graduate Research Presentation</h3>
+                        <p>Graduate student Tanner Hart presents his research at the Louisiana Association of Professional Biologists.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </div>
-			<!-- InstanceBeginEditable name="Main" -->
-			<div id="maindisplay">
 
-			  <div id="centertext">
-			    <p><h2 >Dr. Charles Allen Nature Preserve</h2>
-				<!-- <p><h2>Dr. Charles Allen Nature Preserve</h2></p> -->
-			    <p><h3>Background</h3></p>
-					<p>The Charles Allen Nature Preserve is an 80 acre outdoor classroom located in the rolling Ouachita Hills Region near Columbia, Louisiana, about 30 miles from the campus of ULM.
-					<p>The property was donated to ULM in the year 2000 by Dr. Harry Winters in honor of Dr. Charles Allen, a former ULM professor and accomplished botonist in Louisiana. Over the years, Dr. Winters and Dr. Allen have co-authored several books on the plants of Louisiana and the Gulf South, but CABS is arguably one of their greatest contributions to the state. Efforts are currently underway to make CABS more accessible to ULM students and faculty and develop a master plan for the property. In the future, we hope to make CABS a premiere site for researchers through the state and region.
-				<h3>2016 ULM BioBlitz</h3></p>
-					<p><a href=<"images/bioblitz_full.png" width="530" height="338" alt="" border="0"></a></p>
-					<p>On October 29, 2016, ULM biology students (including members of the Nu-Gamma Chapter of Tri-Beta, the National Biology Honor Society) and faculty will lead hikes through the
-						rolling Ouachita Hills near Columbia, LA. This event, led primarily by students is
-						meant to showcase the outdoor classroom - the ULM Biological Station and Charles
-						Allen Nature Preserve. During this all-day event, participants can expect
-						to hike through high ridges and bottomlands on a mission to spot and identify as
-						many life forms as possible: birds, plants, reptiles, amphibians, mammals, butterflies and more!</p>
-				<p><h8><b>REGISTRATION LINK</b></h8></p>
-					Click <a href="https://docs.google.com/forms/d/1N1ZXvWwiNVWvOhMNeyjsPtS6cSBD_vkvuKZskJlsGVI/viewform">HERE</a> to register for the 2016 BioBlitz!
-      			<p></p>
-				<p><h8><b>GOALS</b></h8></p>
-      			<p>=>	Discover, learn about and document the biological diversity of the Biological Station</p>
-      			<p>=>	Interpret the natural history of the many organisms encountered to broader ULM community  </p>
-      			<p>=>	Provide an opportunity for non-science and science majors alike to appreciate the natural world and interact with scientists      			  </p>
-      			<p>=>	To bring together faculty and students in a shared experiential learning environment      			  </p>
-      			<p>=>	Educate attendees on the importance of biodiversity in Louisiana 
-      			  &nbsp;</p>
-      			<p><h8><b>SCHEDULE</b> </h8>
-      			<p>8:00 &ndash; 10:00 Early Bird Hike (Biota of focus: Birds but everything else included)<br>
-      			  10:30 &ndash; 1:00 Welcome address, water and snacks, explore resource table, meet the biology faculty, look at live specimens, tally up morning counts, explore the property<br>
-      			  1:00 -3:00 Concurrent Hikes<br>
-      			  Nature Hike 1: (Biota of focus: Reptiles, amphibians, mammal tracks and signs &nbsp;but anything goes!<br>				  
-      			  Nature Hike 2: (Biota of focus:&nbsp; Insects, plants, fungi, birds but anything goes!)<br>
-      			  3:30 &ndash; 4:30 Tally Up and Check Out displays<br>
-      			  4:30 &ndash; Final taxa count announcement, thank you and see you at 2017 Bioblitz!
-   			    
-      			<!--<p> <p><h8>Help Spread the Word: Download the Flier!</h8></P>
-					<a href="images/flier_thumb.png"> <img width="120" height="155" alt="ulm bioblitz" src="images/flier_thumb.png"
-					</p><a> -->
-              </div>
-		    </div>
-			<!-- InstanceEndEditable -->
-<div id="rightpanel"> 
-				<h2> News </h2> 			
-			<h5> Nov, 2016 </h5>
-				 <h6> Dr. Bhattacharjee was invited to speak at the Balipara Foundation Awards, 4th Season - 9th November 2016, in India on the use of UAV's in conservation </h6><p/>
-			<h5> Sept, 2016 </h5>
-				<h6> Plant Ecology Lab member, Melissa Bloch wins best poster award at Louisiana Association of Professional Biologists Annual Meeting in Baton Rouge</h6><p/>
-				<h6> Tanner Hart, graduate student presents his research at Louisiana Association of Professional Biologists in Baton Rouge</h6><p/>
-				<h6> Dr. Bhattacharjee was awarded a travel Grant to attend the AMERIFLUX PI meeting in Golden, Colorado</h6><p/>
-			<h5> August 2016</h5>
-				 <h6> ULM Biology undergrad Nicholas ("Nick") Carlson joins the Plant Ecology Lab</a></h6>
-			<h5> June, 2016</h5>
-				 <h6><a href="http://www.ulm.edu/news/2016/1012-ulm-students-research-takes-her-to-the-himalayas.html">ULM Biology undergrad, Melissa Bloch travels to India on a 1-month research project, working in the Himalayas. She was offered  an internship by <a href="http://www.atree.org/">ATREE</a></a></h6>
-  
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-		  </div>
-		  <div id="footer">
-        	<p>Copyright 2016 </p>
-        	</div>     
-                   
-		</div>
-</div></div>
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2024 University of Louisiana at Monroe</p>
+    </footer>
 
 </body>
-<!-- InstanceEnd --></html>
+
+</html>

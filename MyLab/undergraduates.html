@@ -1,352 +1,226 @@
-<html><!-- InstanceBegin template="/Templates/mylaboratory.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Plant Ecology at ULM</title>
-	<link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Plant Ecology at ULM - Undergraduate Students</title>
+	<link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	<!-- SwiperJS for Rotating Carousel -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 	<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+		/* Swiper Container */
+		.swiper-container {
+			width: 100%;
+			max-width: 900px;
+			margin: auto;
+		}
 
-        #metanav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            /* background-color: #333; */
-            padding: 10px 20px;
-        }
+		/* Individual Slide */
+		.swiper-slide {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background: #fff;
+			border-radius: 12px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			padding: 20px;
+			text-align: center;
+			transition: transform 0.3s ease-in-out;
+		}
 
-        #metanav-links ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+		.swiper-slide:hover {
+			transform: scale(1.05);
+		}
 
-        #metanav-links ul li {
-            margin-left: 20px;
-        }
+		/* Student Image */
+		.student-image {
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 50%;
+			margin-bottom: 15px;
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+		}
 
-        #metanav-links ul li a {
-            color: white;
-            text-decoration: none;
-        }
+		/* Student Name */
+		.student-name {
+			font-size: 22px;
+			font-weight: bold;
+			color: #590100;
+		}
 
-        #wrapper {
-            display: grid;
-            grid-template-columns: 200px 1fr 200px;
-            gap: 20px;
-            padding: 20px;
-        }
+		/* Research Focus & Projects */
+		.research-interests,
+		.project-list {
+			list-style-type: none;
+			padding: 0;
+			font-size: 14px;
+		}
 
-        #joydeep {
-            grid-column: 1 / -1;
-            text-align: center;
-        }
+		/* Highlighted Section */
+		.highlight-text {
+			font-weight: bold;
+			color: #77000F;
+		}
 
-        #banner {
-            grid-column: 1 / -1;
-            text-align: center;
-        }
+		/* Swiper Arrows */
+		.swiper-button-next,
+		.swiper-button-prev {
+			color: #590100;
+		}
 
-        #leftnav {
-            grid-column: 1 / 2;
-        }
+		/* Swiper Pagination Dots */
+		.swiper-pagination-bullet {
+			background-color: #77000F;
+		}
 
-        #leftnav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        #leftnav ul li {
-            margin-bottom: 10px;
-        }
-
-        #leftnav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        #maindisplay {
-            grid-column: 2 / 3;
-        }
-
-        #gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        #gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        #rightpanel {
-            grid-column: 3 / 4;
-        }
-
-        #footer {
-            grid-column: 1 / -1;
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-    </style>
-
-        
-
+		.swiper-container {
+			width: 100%;
+			max-width: 1100px;
+			/* Increase size */
+			margin: auto;
+		}
+	</style>
 </head>
 
 <body>
-	<div id="metanav">
-		<div id="ulm-icon">
-			<img src="../images/ULM-icon.jpg" alt="ULM">
-		</div>
 
-		<div id="metanav-links">
-			<ul>
-				<li><a href="http://ulm.edu/biology/">Department of Biology</a></li>
-				<li><a href="http://ulm.edu/biology/faculty.html">Faculty</a></li>
-				<li><a href="http://ulm.edu/biology/undergraduate-program.html">Undergraduate Program</a></li>
-				<li><a href="http://ulm.edu/biology/graduate-program.html">Graduate Program</a></li>
-				<li><a href="http://ulm.edu/biology/student-groups.html">Student Groups</a></li>
-				<li><a href="http://ulm.edu/biology/browse-on-the-bayou.html">Browse on the Bayou</a></li>
-			</ul>
-		</div>
-	</div>
-
+	<!-- Meta Navigation -->
+	<header id="metanav">
+		<script>
+			fetch('../components/navbar.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('metanav').innerHTML = data;
+				});
+		</script>
+	</header>
 
 	<div id="wrapper">
 
-		<div id="joydeep">
-			<h1 class="black">Dr. Joydeep </h1>
-			<h1> Bhattacharjee </h1>
-		</div>
+		<!-- Page Content Wrapper -->
+		<div class="content-wrapper">
+			<!-- Left Navigation -->
+			<aside id="leftnav">
 
-		<div id="banner">
-			<img src="../images/bromeliad.jpg" width="900" height="150" alt="Banner Bromeliad" />
-		</div>
+			</aside>
 
-		<div id="body">
+			<!-- Main Content -->
+			<main id="maindisplay">
 
-			<div id="leftnav">
-				<ul>
-					<li><a href="../index.html"> HOME</a></li>
-					<li><a href="mylaboratory.html">LABORATORY</a></li>
-					<li><a href="../carbontower.html">CARBON TOWER</a></li>
-					<li><a href="phenocam.html">PHENOCAM</a></li>
-					<li><a href="../ouchita.html">OUACHITA WMA</a></li>
-					<li><a href="../canp.html">Dr. CHAELES ALLEN NATURE PRESERVE</a></li>
-					<!-- <li><a href="../wrec.html">WREC</a></li> -->
-					<li><a href="../gallery.html">GALLERY</a></li>
-					<li><a href="../links.html">LINKS</a></li>
-					<br>
-					<br>
-					<li> <img src="../images/ULM Circle Logo.jpg" width="119" height="118"
-							alt="University of Louisiana at Monroe"> </li>
-					<li> <img src="../images/ulm-warhawks.jpeg" width="125" height="85" alt="ULM"></li>
-				</ul>
-			</div>
-			<!-- InstanceBeginEditable name="Main" -->
-			<div id="maindisplay">
-				<div id="topnav">
-					<ul>
-						<li><a href="../MyLab/research.html">Research Interests</a></li>
-						<li><a href="graduates.html">Graduate Students</a></li>
-						<li><a href="undergraduates.html">Undergraduates</a></li>
-					</ul>
-				</div>
-				<div id="centertext">
-					<h2>Undergraduate Students </h2>
-					<p> <br>
+				
+            <!-- Secondary Navigation -->
+            <section id="topnav">
+                <ul>
+                    <li><a href="../MyLab/research.html"><i class="fas fa-flask"></i> Research Interests</a></li>
+                    <li><a href="graduates.html"><i class="fas fa-user-graduate"></i> Graduate Students</a></li>
+                    <li><a href="undergraduates.html"><i class="fas fa-users"></i> Undergraduates</a></li>
+                </ul>
+            </section>
+			
 
-						<!-- SUBASH-->
-						<img src="../images/subash.jpg" width="500" height="350" alt="" />
-					</p>
+				<article id="centertext">
+					<header class="content-header">
+						<h2><i class="fas fa-user-graduate"></i> Undergraduate Students</h2>
+					</header>
 
+					<!-- Swiper Carousel -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
 
-					<div class="student-profile">
-						<h3 class="student-name">Subash Sapkota</h3>
-
-						<div class="bio-section">
-							<p class="bio-text"><br>A senior undergraduate student from Nepal pursuing a dual major in
-								Biology and Mathematics, Subash is passionate about combating climate change through
-								innovative ecosystem monitoring. He specializes in integrating modern technologies like
-								remote sensing and machine learning to enhance environmental protection efforts.</p>
-						</div>
-
-						<div class="research-section">
-							<h4 class="section-heading">Research Focus:</h4>
-							<ul class="research-interests">
-								<li> <br>- Multispectral/hyperspectral remote sensing for ecosystem assessment</li>
-								<li> - Machine learning applications in environmental monitoring</li>
-								<li> - Biodiversity analysis using spectral data</li>
-								<li> - Forest dynamics and regeneration patterns</li>
-								<li> - Climate change impact mitigation strategies</li>
-							</ul>
-						</div>
-
-						<div class="projects-section">
-							<h4 class="section-heading"><br>Key Projects:</h4>
-							<div class="project-item">
-								<h5 class="project-title"><br>Aquatic Plant Phenology Tracking (ULM Plant Ecology Lab)
-								</h5>
-								<p class="project-desc">Developed UAV-based machine learning models to identify aquatic
-									species and monitor phenological spread patterns</p>
+							<!-- Student Profile: Subash -->
+							<div class="swiper-slide">
+								<img src="../images/subash.jpg" alt="Subash Sapkota" class="student-image">
+								<h3 class="student-name">Subash Sapkota</h3>
+								<p class="bio-text">Senior undergraduate student from Nepal, dual major in Biology and
+									Mathematics. Passionate about climate change mitigation using modern technologies.
+								</p>
+								<h4 class="section-heading"><i class="fas fa-flask"></i> Research Focus</h4>
+								<ul class="research-interests">
+									<li>Multispectral/hyperspectral remote sensing</li>
+									<li>Machine learning in environmental monitoring</li>
+								</ul>
+								<h4 class="section-heading"><i class="fas fa-project-diagram"></i> Key Projects</h4>
+								<p class="highlight-text">Leading LiDAR research analyzing forest stratification.</p>
 							</div>
 
-							<div class="project-item">
-								<h5 class="project-title">Northwoods Seedling Distribution Analysis (UNDERC 2023)</h5>
-								<p class="project-desc">Investigated ecological and topographical drivers of seedling
-									patterns in boreal forests</p>
+							<!-- Student Profile: Rheanna -->
+							<div class="swiper-slide">
+								<img src="../images/Rheanna.png" alt="Rheanna Wesley" class="student-image">
+								<h3 class="student-name">Rheanna Wesley</h3>
+								<p class="bio-text">Sophomore Biology major at ULM. Current research focuses on stomatal
+									density analysis.</p>
+								<h4 class="section-heading"><i class="fas fa-microscope"></i> Lab Activities</h4>
+								<ul class="project-list">
+									<li>Stomatal Density Analysis - Investigating plant pore structures.</li>
+								</ul>
+								<h4 class="section-heading"><i class="fas fa-seedling"></i> Current Initiative</h4>
+								<p class="highlight-text">Conducting microscopic analysis of plant stomata structures.
+								</p>
 							</div>
 
-							<div class="project-item">
-								<h5 class="project-title">Hyperspectral Biodiversity Assessment (UNDERC 2024)</h5>
-								<p class="project-desc">Analyzing NEON data to evaluate taxonomic, phylogenetic, and
-									functional diversity using spectral signatures</p>
+							<!-- Student Profile: Brock -->
+							<div class="swiper-slide">
+								<img src="../images/Brock.png" alt="Brock Eppinette" class="student-image">
+								<h3 class="student-name">Brock Eppinette</h3>
+								<p class="bio-text">Senior Toxicology major at ULM, specializing in laboratory research
+									methodologies.</p>
+								<h4 class="section-heading"><i class="fas fa-vials"></i> Research Focus</h4>
+								<ul class="research-interests">
+									<li>Laboratory technique development</li>
+									<li>Toxicology investigation</li>
+								</ul>
+								<h4 class="section-heading"><i class="fas fa-lightbulb"></i> Current Initiative</h4>
+								<p class="highlight-text">Supporting colleagues in advancing toxicology research
+									projects.</p>
 							</div>
+
 						</div>
 
-						<div class="current-work">
-							<h4 class="section-heading">Current Initiative: </h4>
-							<p class="highlight-text"><br>Leading LiDAR integration research analyzing vertical forest
-								stratification and regeneration potential in mixed hardwood stands</p>
-						</div>
-
-						<div class="personal-interests">
-							<h4 class="section-heading">Beyond the Lab:</h4>
-							<p><br>Enjoys exploring cultural music from Nepal to Nashville, strategic chess matches,
-								wilderness hiking, and analyzing sports/film narratives</p>
-						</div>
+						<!-- Swiper Pagination & Navigation -->
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
 
-
-
-					<!-- RHEANNA-->
-					<img src="../images/Rheanna.png" width="270" height="350" alt="" />
-					</p>
-					<div class="student-profile">
-						<h3 class="student-name">Rheanna Wesley</h3>
-
-						<div class="bio-section">
-							<p class="bio-text"><br>Sophomore Biology major at the University of Louisiana at Monroe. Current lab project focuses on stomatal density.</p>
-						</div>
-						
-						<div class="research-section">
-							<h4 class="section-heading">Research Focus:</h4>
-							<ul class="research-interests">
-								<li> <br>- Stomatal density analysis</li>
-							</ul>
-						</div>
-						
-						<div class="projects-section">
-							<h4 class="section-heading"><br>Lab Activities:</h4>
-							<div class="project-item">
-								<h5 class="project-title"><br>Stomatal Density Analysis</h5>
-								<p class="project-desc">Investigating plant pore structures in different species</p>
-							</div>
-						</div>
-						
-						<div class="current-work">
-							<h4 class="section-heading">Current Initiative: </h4>
-							<p class="highlight-text"><br>Conducting microscopic analysis of plant stomata structures</p>
-						</div>
-					</div>
-
-
-
-
-
-
-					<!-- BROCK-->
-					<img src="../images/Brock.png" width="270" height="350" alt="" />
-					</p>
-					<div class="student-profile">
-						<h3 class="student-name">Brock Eppinette</h3>
-
-						<div class="bio-section">
-							<p class="bio-text"><br>Senior Toxicology major at the University of Louisiana at Monroe.
-								Currently engaged in laboratory research methodologies and supporting ongoing
-								investigations.</p>
-						</div>
-
-						<div class="research-section">
-							<h4 class="section-heading">Research Focus:</h4>
-							<ul class="research-interests">
-								<li> <br>- Laboratory technique development</li>
-								<li> - Collaborative research processes</li>
-								<li> - Toxicology investigation support</li>
-							</ul>
-						</div>
-
-						<div class="projects-section">
-							<h4 class="section-heading"><br>Lab Activities:</h4>
-							<div class="project-item">
-								<h5 class="project-title"><br>Research Methodology Training</h5>
-								<p class="project-desc">Mastering essential laboratory protocols and procedures</p>
-							</div>
-						</div>
-
-						<div class="current-work">
-							<h4 class="section-heading">Current Initiative: </h4>
-							<p class="highlight-text"><br>Supporting colleagues in advancing ongoing toxicology research
-								projects</p>
-						</div>
-
-						<div class="personal-interests">
-							<h4 class="section-heading">Personal Interests:</h4>
-							<p><br>Enjoys outdoor activities and scientific documentaries</p>
-						</div>
-					</div>
-
-
-
-				</div>
-			</div>
-			<!-- InstanceEndEditable -->
-			<div id="rightpanel">
-				<h2> More info </h2>
-				<!-- <h5> Jan, 2024 </h5>
-				<h6> Plant Ecology Lab welcomes two new members - Grant Erbelding and Joshua Russell</h6> -->
-				<p />
-				<h5> </h5>
-				<h6> - Graduate Student Bibek Kandel defends his MS thesis and leaves for Virginia Tech for his
-					Ph.D.</a>
-				</h6>
-				<h5> </h5>
-				<h6> - Lab member Bibek Kandel (grad) wins the Best poster presentation award at the ULM Student
-					Research
-					Symposium.</a>
-					<h6>
-						<h6> - Lab member Subash Sapkota (undergrad) wins the Best poster presentation award
-							(undergrad-level) at the ULM Student Research Symposium.</a>
-							<h6>
-								<h5> </h5>
-								<h6> - Subash Sapkota (undergrad) travels to Madison, Wisconsin to present research at a
-									NEON GLUG workshop. He was the only undergtraduate selected to present his research
-									at this event.</a></h6>
-
-								<p>&nbsp;</p>
-								<p>&nbsp;</p>
-			</div>
-			<div id="footer">
-				<p>Copyright 2016 </p>
-			</div>
-
+				</article>
+			</main>
 		</div>
 	</div>
-	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<p>&copy; 2024 University of Louisiana at Monroe</p>
+	</footer>
+
+	<!-- SwiperJS for Carousel -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			grabCursor: true,
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			}
+		});
+	</script>
 
 </body>
-<!-- InstanceEnd -->
 
 </html>

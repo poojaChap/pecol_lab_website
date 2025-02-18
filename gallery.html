@@ -1,187 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Ecology at ULM</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plant Ecology at ULM – Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
 
+        /* Meta Navigation */
         #metanav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            /* background-color: #333; */
-            padding: 10px 20px;
+            background-color: #2c3e50;
+            /* padding: 15px 0; */
+            text-align: center;
         }
 
-        #metanav-links ul {
+        #metanav ul {
             list-style: none;
+            padding: 0; 
             margin: 0;
-            padding: 0;
             display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
-        #metanav-links ul li {
-            margin-left: 20px;
-        }
-
-        #metanav-links ul li a {
+        #metanav ul li a {
             color: white;
             text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
         }
 
-        #wrapper {
+        #metanav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Content Wrapper */
+        .content-wrapper {
             display: grid;
-            grid-template-columns: 200px 1fr 200px;
+            grid-template-columns: 200px 1fr 250px;
             gap: 20px;
             padding: 20px;
         }
 
-        #joydeep {
-            grid-column: 1 / -1;
-            text-align: center;
-        }
-
-        #banner {
-            grid-column: 1 / -1;
-            text-align: center;
-        }
-
+        /* Left Sidebar */
         #leftnav {
-            grid-column: 1 / 2;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
-        #leftnav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        #leftnav ul li {
+        .left-images img {
+            width: 80%;
+            border-radius: 8px;
             margin-bottom: 10px;
         }
 
-        #leftnav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-
+        /* Main Content */
         #maindisplay {
-            grid-column: 2 / 3;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        /* Gallery Styling */
         #gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 15px;
+            margin-top: 20px;
         }
 
         #gallery img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
         }
 
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Right Sidebar */
         #rightpanel {
-            grid-column: 3 / 4;
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .news-section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .news-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
         #footer {
-            grid-column: 1 / -1;
             text-align: center;
-            padding: 20px;
-            background-color: #333;
+            padding: 15px;
+            background-color: #2c3e50;
             color: white;
+            margin-top: 20px;
+        }
+
+        #footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
         }
     </style>
-
-
 </head>
+
 <body>
-    <div id="metanav">
-        <div id="ulm-icon">
-            <img src="images/ULM-icon.jpg" alt="ULM">
-        </div>
-        <div id="metanav-links">
-            <ul>
-                <li><a href="http://ulm.edu/biology/">Department of Biology</a></li>
-                <li><a href="http://ulm.edu/biology/faculty.html">Faculty</a></li>
-                <li><a href="http://ulm.edu/biology/undergraduate-program.html">Undergraduate Program</a></li>
-                <li><a href="http://ulm.edu/biology/graduate-program.html">Graduate Program</a></li>
-                <li><a href="http://ulm.edu/biology/student-groups.html">Student Groups</a></li>
-                <li><a href="http://ulm.edu/biology/browse-on-the-bayou.html">Browse on the Bayou</a></li>
-            </ul>
-        </div>
-    </div>
+    <!-- Meta Navigation (loaded via fetch) -->
+    <header id="metanav">
+        <script>
+            fetch('../components/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('metanav').innerHTML = data;
+                });
+        </script>
+    </header>
 
-    <div id="wrapper">
-        <div id="joydeep">
-            <h1 class="black">Dr. Joydeep</h1>
-            <h1>Bhattacharjee</h1>
-        </div>
+    <!-- Page Content Wrapper -->
+    <div class="content-wrapper">
 
-        <div id="banner">
-            <img src="images/orchid.jpg" width="900" height="150" alt="Orchid">
-        </div>
-
-        <div id="leftnav">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="MyLab/mylaboratory.html">LABORATORY</a></li>
-                <li><a href="carbontower.html">CARBON TOWER</a></li>
-                <li><a href="phenocam.html">PHENOCAM</a></li>
-                <li><a href="ouchita.html">OUACHITA WMA</a></li>
-                <li><a href="canp.html">Dr. CHAELES ALLEN NATURE PRESERVE</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="links.html">LINKS</a></li>
-                <br>
-                <br>
-                <li><img src="images/ULM Circle Logo.jpg" width="119" height="118" alt="University of Louisiana at Monroe"></li>
-                <li><img src="images/ulm-warhawks.jpeg" width="125" height="85" alt="ULM"></li>
-            </ul>
-        </div>
-
-        <div id="maindisplay">
-            <div id="centertext">
-                <h2>Gallery</h2>
-                <h6>Dr. Bhattacharjee's Photography</h6>
-                <div id="gallery">
-                    <!-- <img src="images/Gallery/tree.gif" width="500" height="333" alt="Bhattacharjee" style="position: relative; top: 60px; transform: rotate(90deg); transform-origin: center;"> -->
-                    <!-- <img src="images/Gallery/rainbow.gif" width="500" height="333" alt="Bhattacharjee" style=" position: relative; top: 160px; transform: rotate(90deg); transform-origin: center;"> -->
-                    <img src="images/Gallery/tree.gif" alt="Bhattacharjee">
-                    <img src="images/Gallery/rainbow.gif" alt="Bhattacharjee">
-                    <img src="images/Gallery/ludwigiasphinx.jpg" alt="Bhattacharjee">
-                    <img src="images/Gallery/mushroom.jpg" alt="Bhattacharjee">
-                    <img src="images/Gallery/idk.JPG" alt="Bhattacharjee">
-                    <img src="images/Gallery/idkkk.JPG" alt="Bhattacharjee">
-                    <img src="images/Gallery/water.JPG" alt="Bhattacharjee">
-                    <img src="images/Gallery/seaoats.jpg" alt="Bhattacharjee">
-                </div>
-                <p>Click <a href="http://www.panoramio.com/user/5160434">HERE</a> for more of Dr. Bhattacharjee's photographs at Panaramio.com.</p>
+        <!-- Left Sidebar -->
+        <aside id="leftnav">
+            <div class="left-images">
+                <img src="images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe Logo">
+                <img src="images/ulm-warhawks.jpeg" alt="ULM Warhawks">
             </div>
-        </div>
+        </aside>
 
-        <div id="rightpanel">
-            <h2>More info</h2>
-            <h6>- Dr. Bhattacharjee was invited to speak at the Balipara Foundation Awards, 4th Season - 9th November 2016, in India on the use of UAV's in conservation</h6>
-            <h6>- Plant Ecology Lab member, Melissa Bloch wins best poster award at Louisiana Association of Professional Biologists Annual Meeting in Baton Rouge</h6>
-            <h6>- Tanner Hart, graduate student presents his research at Louisiana Association of Professional Biologists in Baton Rouge</h6>
-            <h6>- Dr. Bhattacharjee was awarded a travel Grant to attend the AMERIFLUX PI meeting in Golden, Colorado</h6>
-            <h6>- ULM Biology undergrad Nicholas ("Nick") Carlson joins the Plant Ecology Lab</h6>
-            <h6><a href="http://www.ulm.edu/news/2016/1012-ulm-students-research-takes-her-to-the-himalayas.html">- ULM Biology undergrad, Melissa Bloch travels to India on a 1-month research project, working in the Himalayas. She was offered an internship by <a href="http://www.atree.org/">ATREE</a></a></h6>
-        </div>
+        <!-- Main Content -->
+        <main id="maindisplay">
+            <section id="centertext">
+                <header>
+                    <h2><i class="fas fa-camera"></i> Gallery</h2>
+                    <p>By <strong>Dr. Joydeep Bhattacharjee</strong></p>
+                </header>
 
-        <div id="footer">
-            <p>Copyright 2016</p>
-        </div>
+                <div id="gallery">
+                    <img src="images/Gallery/tree.gif" alt="Nature Image">
+                    <img src="images/Gallery/rainbow.gif" alt="Nature Image">
+                    <img src="images/Gallery/ludwigiasphinx.jpg" alt="Nature Image">
+                    <img src="images/Gallery/mushroom.jpg" alt="Nature Image">
+                    <img src="images/Gallery/idk.JPG" alt="Nature Image">
+                    <img src="images/Gallery/idkkk.JPG" alt="Nature Image">
+                    <img src="images/Gallery/water.JPG" alt="Nature Image">
+                    <img src="images/Gallery/seaoats.jpg" alt="Nature Image">
+                </div>
+
+                <p class="center">
+                    Click <a href="http://www.panoramio.com/user/5160434" target="_blank"><i class="fas fa-external-link-alt"></i> HERE</a> for more of Dr. Bhattacharjee's photographs at Panaramio.com.
+                </p>
+            </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <!-- <aside id="rightpanel">
+            <div class="news-section">
+                <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
+
+                <div class="news-card">
+                    <h3>Conservation Talk</h3>
+                    <p>Dr. Bhattacharjee was invited to speak at the Balipara Foundation Awards in India on UAVs in conservation.</p>
+                </div>
+
+                <div class="news-card">
+                    <h3>Best Poster Award</h3>
+                    <p>Lab member, Melissa Bloch, wins Best Poster Award at Louisiana Association of Professional Biologists Annual Meeting.</p>
+                </div>
+
+                <div class="news-card">
+                    <h3>Graduate Research</h3>
+                    <p>Graduate student Tanner Hart presents research at the Louisiana Association of Professional Biologists in Baton Rouge.</p>
+                </div>
+
+                <div class="news-card">
+                    <h3>Research Grant Awarded</h3>
+                    <p>Dr. Bhattacharjee awarded a travel grant to attend the AMERIFLUX PI meeting in Golden, Colorado.</p>
+                </div>
+
+                <div class="news-card">
+                    <h3>New Lab Member</h3>
+                    <p>ULM Biology undergrad Nicholas ("Nick") Carlson joins the Plant Ecology Lab.</p>
+                </div>
+            </div>
+        </aside> -->
+        
     </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2024 University of Louisiana at Monroe | <a href="#">Privacy Policy</a></p>
+    </footer>
 </body>
+
 </html>

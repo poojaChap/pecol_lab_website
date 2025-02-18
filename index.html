@@ -1,117 +1,168 @@
-<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Plant Ecology at ULM</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plant Ecology at ULM - Dr. Joydeep Bhattacharjee</title>
+    <link rel="stylesheet" href="css/styles.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 
 <body>
+    <!-- Meta Navigation (loaded via fetch) -->
+    <header id="metanav">
+        <script>
+            fetch('../components/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('metanav').innerHTML = data;
+                });
+        </script>
+
+    </header>
+
+    <!-- Main Content Layout -->
+    <div class="content-wrapper">
 
 
-    <div id="metanav"></div>
+        <!-- Left Sidebar -->
 
-    <script>
-        fetch('components/navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('metanav').innerHTML = data;
-            });
-    </script>
+        <aside id="leftnav" style="border: 2px solid #eed533;">
+            <script>
+                fetch('../components/leftnav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('leftnav').innerHTML = data;
+                    });
+            </script>
+        </aside>
 
 
-    <div id="wrapper">
-
-        <div id="joydeep">
-            <h1 class="black">Dr. Joydeep </h1>
-            <h1> Bhattacharjee </h1>
-        </div>
-
-        <!-- <div id="banner">
-            <img src="images/banner 01.jpg" width="900" height="150" alt="Black Bayou" />
-        </div> -->
-
-        <div id="body">
-
-            <div id="leftnav">
+        <!-- Main Display Area -->
+        <main id="maindisplay">
+            <!-- Secondary Navigation -->
+            <section id="topnav">
                 <ul>
-                    <li><a href="index.html"> HOME</a></li>
-                    <li><a href="MyLab/mylaboratory.html">LABORATORY</a></li>
-                    <li><a href="carbontower.html">CARBON TOWER</a></li>
-                    <li><a href="phenocam.html">PHENOCAM</a></li>
-                    <li><a href="ouchita.html">OUACHITA WMA</a></li>
-                    <li><a href="canp.html">Dr. CHAELES ALLEN NATURE PRESERVE</a></li>
-                    <!-- <li><a href="wrec.html">WREC</a></li> -->
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="links.html">LINKS</a></li>
-                    <br>
-                    <br>
-                    <li> <img src="images/ULM Circle Logo.jpg" width="119" height="118"
-                            alt="University of Louisiana at Monroe"> </li>
-                    <li> <img src="images/ulm-warhawks.jpeg" width="125" height="85" alt="ULM"></li>
+                    <li><a href="Home/professional.html" class="nav-link"><i class="fas fa-briefcase"></i> Professional
+                            Preparation</a></li>
+                    <li><a href="Home/past.html" class="nav-link"><i class="fas fa-history"></i> Past Appointments</a>
+                    </li>
+                    <li><a href="Home/Publications.html" class="nav-link"><i class="fas fa-book-open"></i>
+                            Publications</a></li>
+                    <li><a href="Home/Courses.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i>
+                            Courses</a></li>
+                    <li><a href="Home/Other.html" class="nav-link"><i class="fas fa-handshake"></i> Collaborators</a>
+                    </li>
+                    <li><a href="Home/Grants.html" class="nav-link"><i class="fas fa-award"></i> Grants</a></li>
                 </ul>
-            </div>
-            <!-- InstanceBeginEditable name="Main" -->
-            <div id="maindisplay">
-                <div id="topnav">
-                    <ul>
-                        <li><a href="Home/professional.html">Professional Preparation</a></li>
-                        <li><a href="Home/past.html">Past Appointments</a></li>
-                        <li><a href="Home/Publications.html">Publications</a></li>
-                        <li><a href="Home/Courses.html">Courses Taught</a></li>
-                        <li><a href="Home/Other.html">Collaborators</a></li>
-                        <li><a href="Home/Grants.html">Grants</a></li>
-                    </ul>
+            </section>
+
+
+
+            <!-- Center Content -->
+            <section id="centertext">
+                <div class="profile-card">
+                    <div class="image-container">
+                        <img src="images/drbprofiletower.jpg" alt="Dr. Joydeep Bhattacharjee" class="profile-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Dr. Joydeep Bhattacharjee</h1>
+                        <p class="position">Professor of Biology</p>
+                        <div class="contact-details">
+                            <p><i class="fas fa-map-marker-alt"></i>221D Hanna Hall<br>University of Louisiana at
+                                Monroe<br>Monroe, LA 71029-0520</p>
+                            <p><i class="fas fa-phone"></i>318-342-1946</p>
+                            <p><i class="fas fa-envelope"></i><a href="mailto:joydeep@ulm.edu">joydeep@ulm.edu</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div id="centertext">
+            </section>
 
-                    <p><img src="images/drbprofiletower.jpg" width="515" height="280" alt="" border="0"></p>
-                    <h6>Dr. Joydeep Bhattacharjee</h6> <br>
-                    Professor of Biology<br>
-                    Plant and Spectral Ecology Lab <br>
-                    221D Hanna Hall<br>
-                    Biology Program, School of Sciences<br>
-                    University of Louisiana at Monroe<br>
-                    Monroe, LA 71029-0520<br>
-                    Phone: 318-342-1946<br>
-                    Email: joydeep [at] ulm.edu
-                    <p>&nbsp;</p>
+        </main>
+
+
+        <!-- Right Sidebar -->
+
+
+        <!-- <aside id="rightpanel">
+            <div class="news-section">
+                <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
+                <div class="news-card">
+                    <div class="news-content">
+                        <h3>New Lab Members</h3>
+                        <p>Plant Ecology Lab welcomes Grant Erbelding and Joshua Russell.</p>
+                        <span class="news-date">May 2023</span>
+                    </div>
                 </div>
-            </div>
-            <!-- InstanceEndEditable -->
-            <div id="rightpanel">
-                <h2> More info </h2>
-                <h5> </h5>
-                <h6> - Plant Ecology Lab welcomes two new members - Grant Erbelding and Joshua Russell</h6>
-                <p />
-                <h5> </h5>
-                <h6> - Graduate Student Bibek Kandel defends his MS thesis and leaves for Virginia Tech for his
-                    Ph.D.</a></h6>
-                <h5> </h5>
-                <h6> - Lab member Bibek Kandel (grad) wins the Best poster presentation award at the ULM Student
-                    Research Symposium.</a>
-                    <h6>
-                        <h6> - Lab member Subash Sapkota (undergrad) wins the Best poster presentation award
-                            (undergrad-level) at the ULM Student Research Symposium.</a>
-                            <h6>
-                                <h5> </h5>
-                                <h6> - Subash Sapkota (undergrad) travels to Madison, Wisconsin to present research at a
-                                    NEON GLUG workshop. He was the only undergtraduate selected to present his research
-                                    at this event.</a></h6>
 
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-            </div>
-            <div id="footer">
-                <p>Copyright 2023 </p>
-            </div>
 
-        </div>
+
+                <div class="news-card">
+                    <div class="news-content">
+                        <h3>Graduate Student Defends Thesis and Moves to Virginia Tech</h3>
+                        <h3>Thesis Defense</h3>
+                        <p>Graduate student Bibek Kandel defends his MS thesis and leaves for Virginia Tech for his
+                            Ph.D.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="news-card">
+                    <div class="news-content">
+                        <h3>Lab Member Wins Best Poster Presentation Award</h3>
+                        <h3>Poster Award</h3>
+                        <p>Lab member Bibek Kandel (grad) wins the Best Poster Presentation Award at the ULM Student
+                            Research Symposium.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="news-card">
+                    <div class="news-content">
+                        <h3>Undergraduate Lab Member Wins Best Poster Award</h3>
+                        <h3>Undergrad Award</h3>
+                        <p>Lab member Subash Sapkota (undergrad) wins the Best Poster Presentation Award
+                            (undergrad-level) at the ULM Student Research Symposium.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="news-card">
+                    <div class="news-content">
+                        <h3>Undergraduate Presents Research at NEON GLUG Workshop</h3>
+                        <h3>Research Presentation</h3>
+                        <p>Subash Sapkota (undergrad) travels to Madison, Wisconsin to present research at a NEON GLUG
+                            workshop—the only undergraduate selected for this event.</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </aside> -->
+
+
     </div>
-    </div>
+
+    <!-- Footer (loaded via fetch) -->
+    <footer id="footer" class="center"> <!-- Empty footer element -->
+        <script>
+            fetch('../components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script>
+    </footer>
 
 </body>
-<!-- InstanceEnd -->
 
 </html>

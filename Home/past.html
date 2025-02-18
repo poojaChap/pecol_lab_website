@@ -1,240 +1,319 @@
-<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Plant Ecology at ULM</title>
-    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plant Ecology at ULM – Past Appointments</title>
 
-	<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* Timeline Container */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
         }
 
-        #metanav {
+        /* Timeline Line */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: linear-gradient(180deg, #3498db, #2ecc71);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Timeline Items */
+        .timeline-item {
+            position: relative;
+            padding: 40px 30px;
+            width: 50%;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            text-align: center;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            /* background-color: #333; */
-            padding: 10px 20px;
+            margin-bottom: 40px;
         }
 
-        #metanav-links ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        /* Left & Right Positioning */
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        .timeline-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Timeline Icons (Above Cards) */
+        .timeline-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3498db, #2ecc71);
             display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: -30px;
+            /* This moves the icon above the card */
+            z-index: 2;
         }
 
-        #metanav-links ul li {
-            margin-left: 20px;
-        }
-
-        #metanav-links ul li a {
+        .timeline-icon i {
+            font-size: 28px;
             color: white;
-            text-decoration: none;
         }
 
-        #wrapper {
-            display: grid;
-            grid-template-columns: 200px 1fr 200px;
-            gap: 20px;
+        /* Content Styling */
+        .timeline-content {
             padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
         }
 
-        #joydeep {
-            grid-column: 1 / -1;
-            text-align: center;
-        }
-
-        #banner {
-            grid-column: 1 / -1;
-            text-align: center;
-        }
-
-        #leftnav {
-            grid-column: 1 / 2;
-        }
-
-        #leftnav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        #leftnav ul li {
-            margin-bottom: 10px;
-        }
-
-        #leftnav ul li a {
-            text-decoration: none;
+        .timeline-content h3 {
+            margin-top: 10px;
+            font-size: 20px;
             color: #333;
         }
 
-        #maindisplay {
-            grid-column: 2 / 3;
+        .timeline-content p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
         }
 
-        #gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        .timeline-content ul {
+            padding-left: 20px;
         }
 
-        #gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .timeline-content ul li {
+            font-size: 14px;
         }
 
-        #rightpanel {
-            grid-column: 3 / 4;
-        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .timeline::after {
+                left: 20px;
+            }
 
-        #footer {
-            grid-column: 1 / -1;
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
+            .timeline-item {
+                width: 100%;
+                padding: 20px;
+                text-align: left;
+            }
+
+            .timeline-item.right {
+                left: 0;
+            }
         }
     </style>
 
-        
-        
-</head> 
+</head>
 
 <body>
-<div id="metanav">
-	<div id="ulm-icon">
-		<img src="../images/ULM-icon.jpg"  alt="ULM">
-	</div>
 
-	<div id="metanav-links"> 
-	   	<ul>
-            	<li><a href="http://ulm.edu/biology/">Department of Biology</a></li>
-                <li><a href="http://ulm.edu/biology/faculty.html">Faculty</a></li>
-                <li><a href="http://ulm.edu/biology/undergraduate-program.html">Undergraduate Program</a></li>
-                <li><a href="http://ulm.edu/biology/graduate-program.html">Graduate Program</a></li>
-                <li><a href="http://ulm.edu/biology/student-groups.html">Student Groups</a></li>
-                <li><a href="http://ulm.edu/biology/browse-on-the-bayou.html">Browse on the Bayou</a></li>
-        </ul>
-	</div>
-</div>
+    <!-- Meta Navigation (loaded via fetch) -->
+    <header id="metanav">
+        <script>
+            fetch('../components/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('metanav').innerHTML = data;
+                });
+        </script>
+    </header>
+
+    <!-- Page Content Wrapper -->
+    <div class="content-wrapper">
+
+        <!-- Left Sidebar -->
+        <aside id="leftnav">
+            <div class="left-images">
+                <img src="../images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe Logo" width="119"
+                    height="118">
+                <img src="../images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85">
+            </div>
+        </aside>
+
+        <!-- Main Display Area -->
+        <main id="maindisplay">
+
+            <!-- Secondary Navigation -->
+            <!-- <section id="topnav">
+                <ul>
+                    <li><a href="professional.html" class="nav-link"><i class="fas fa-briefcase"></i> Professional
+                            Preparation</a></li>
+                    <li><a href="past.html" class="nav-link"><i class="fas fa-history"></i> Past Appointments</a></li>
+                    <li><a href="Publications.html" class="nav-link"><i class="fas fa-book-open"></i> Publications</a>
+                    </li>
+                    <li><a href="Courses.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Courses
+                            Taught</a></li>
+                    <li><a href="Other.html" class="nav-link"><i class="fas fa-handshake"></i> Collaborators</a></li>
+                    <li><a href="Grants.html" class="nav-link"><i class="fas fa-award"></i> Grants</a></li>
+                </ul>
+            </section> -->
 
 
-<div id="wrapper">
-    
-		<div id="joydeep">
-			<h1 class="black">Dr. Joydeep </h1> <h1> Bhattacharjee </h1>
-</div>
-            
-		<div id="banner">
-  <img src="../images/banner 01.jpg" width="900" height="150" alt="Black Bayou"></div>
-            
-		<div id="body"> 
-            
-          <div id="leftnav">
-                      <ul>
-                          <li><a href="../index.html"> HOME</a></li> 
-                          <li><a href="../MyLab/mylaboratory.html">LABORATORY</a></li> 
-                          <li><a href="../carbontower.html">CARBON TOWER</a></li>
-						  <li><a href="phenocam.html">PHENOCAM</a></li>
-                          <li><a href="../ouchita.html">OUACHITA WMA</a></li>
-                          <li><a href="../canp.html">Dr. CHAELES ALLEN NATURE PRESERVE</a></li>
-                          <!-- <li><a href="../wrec.html">WREC</a></li> -->
-                          <li><a href="../gallery.html">GALLERY</a></li>
-                          <li><a href="../links.html">LINKS</a></li>
-                          <br>
-                          <br>
-                          <li> <img src="../images/ULM Circle Logo.jpg" width="119" height="118" alt="University of Louisiana at Monroe"> </li>
-                           <li> <img src="../images/ulm-warhawks.jpeg" width="125" height="85" alt="ULM"></li>
-                      </ul>
+            <!-- Secondary Navigation -->
+            <section id="topnav">
+                <ul>
+                    <li><a href="/Home/professional.html" class="nav-link"><i class="fas fa-briefcase"></i> Professional
+                            Preparation</a></li>
+                    <li><a href="/Home/past.html" class="nav-link"><i class="fas fa-history"></i> Past Appointments</a>
+                    </li>
+                    <li><a href="/Home/Publications.html" class="nav-link"><i class="fas fa-book-open"></i>
+                            Publications</a></li>
+                    <li><a href="/Home/Courses.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i>
+                            Courses</a></li>
+                    <li><a href="/Home/Other.html" class="nav-link"><i class="fas fa-handshake"></i> Collaborators</a>
+                    </li>
+                    <li><a href="/Home/Grants.html" class="nav-link"><i class="fas fa-award"></i> Grants</a></li>
+                </ul>
+            </section>
+
+
+
+
+            <!-- Center Content -->
+            <section id="centertext">
+                <h2><i class="fas fa-briefcase"></i> Career Journey</h2>
+
+                <div class="timeline">
+
+                    <!-- Postdoctoral Research Associate -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-microscope"></i></div>
+                        <div class="timeline-content">
+                            <h3>Postdoctoral Research Associate</h3>
+                            <p class="timeline-duration">2005 - 2006</p>
+                            <p><strong>Texas Tech University, Lubbock, Texas</strong></p>
+                            <p>Worked with Dr. David Haukos & Dr. Loren M. Smith</p>
+                            <ul>
+                                <li>Studied <b>wetland ecology</b> and developed models for <b>aquifer recharge</b>.
+                                </li>
+                                <li>Programmed meteorological data loggers for <b>climate monitoring.</b></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Graduate Research Assistant -->
+                    <div class="timeline-item right">
+                        <div class="timeline-icon"><i class="fas fa-seedling"></i></div>
+                        <div class="timeline-content">
+                            <h3>Graduate Research Assistant</h3>
+                            <p class="timeline-duration">2001 - 2005</p>
+                            <p><strong>Texas Tech University</strong></p>
+                            <ul>
+                                <li>Researched <b>riparian forest restoration</b> in the Rio Grande Valley.</li>
+                                <li>Studied interactions between <b>native cottonwood and invasive saltcedar.</b></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Research Associate -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-tree"></i></div>
+                        <div class="timeline-content">
+                            <h3>Research Associate</h3>
+                            <p class="timeline-duration">1999 - 2001</p>
+                            <p><strong>CREATE, St. Joseph's College, Darjeeling, India</strong></p>
+                            <ul>
+                                <li>Conducted <b>Himalayan forest biodiversity surveys.</b></li>
+                                <li>Worked with <b>Indiana University</b> to study forest degradation patterns.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Conservation Survey Work -->
+                    <div class="timeline-item right">
+                        <div class="timeline-icon"><i class="fas fa-binoculars"></i></div>
+                        <div class="timeline-content">
+                            <h3>Conservation Survey Work</h3>
+                            <p class="timeline-duration">2000 - 2001</p>
+                            <p><strong>Buxa Tiger Reserve, India</strong></p>
+                            <p>Conducted <b>habitat assessment</b> for the endangered <i>Manipur Bush Quail</i>.</p>
+                            <p>Part of the <b>International Bird Areas (IBA) program.</b></p>
+                        </div>
+                    </div>
+
+                    <!-- Research in Nepal -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-mountain"></i></div>
+                        <div class="timeline-content">
+                            <h3>Field Research – Nepal</h3>
+                            <p class="timeline-duration">1999</p>
+                            <p><strong>Bhagawati Palanchok, Nepal</strong></p>
+                            <p>Collaborated with <b>Yale University</b> and <b>University of Washington</b> on forest
+                                governance studies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Master's Thesis -->
+                    <div class="timeline-item right">
+                        <div class="timeline-icon"><i class="fas fa-leaf"></i></div>
+                        <div class="timeline-content">
+                            <h3>Master's Thesis Research</h3>
+                            <p class="timeline-duration">1998 - 1999</p>
+                            <p><strong>North Bengal University, Darjeeling, India</strong></p>
+                            <p>Developed <em>tissue culture techniques</em> for endangered <em>Vanda cristata</em>
+                                orchid species.</p>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+        </main>
+
+        <!-- Right Sidebar: News Section -->
+        <aside id="rightpanel">
+            <div class="news-section">
+                <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
+
+                <div class="news-card">
+                    <h3>Invited Speaker</h3>
+                    <p>Dr. Bhattacharjee will travel to India as an invited speaker on the use of UAVs in conservation.
+                    </p>
+                </div>
+
+                <div class="news-card">
+                    <h3>Best Poster Award</h3>
+                    <p>Melissa Bloch wins the Best Poster Award at the Louisiana Association of Professional Biologists
+                        Annual Meeting.</p>
+                </div>
+
+                <div class="news-card">
+                    <h3>Research Grant</h3>
+                    <p>Dr. Bhattacharjee was awarded a grant to attend the AMERIFLUX PI meeting in Golden, Colorado.</p>
+                </div>
+            </div>
+        </aside>
+
     </div>
-			<!-- InstanceBeginEditable name="Main" -->
-			<div id="maindisplay">
-			  <div id="topnav">
-			    <ul>
-			      <li><a href="professional.html">Professional Preparation</a></li>
-			      <li><a href="past.html">Past Appointments</a></li>
-			      <li><a href="Publications.html">Publications</a></li>
-				  <li><a href="Courses.html">Courses Taught</a></li>
-				  <li><a href="Other.html">Collaborators</a></li>
-				  <li><a href="Grants.html">Grants</a></li>
-		        </ul>
-		      </div>
-			  <div id="centertext">
-			    
-			    <h2>Research Interests</h2>
-			    <p>&nbsp; </p>
-			    <h3>Past Appointments</h3>
-			    <p>&nbsp;</p>
-			    <h6>Post-doctoral Research Associate (September 2005 – June 2006)<br></h6>
-					<p>(with Dr. David Haukos* and Dr. Loren M. Smith**) <br>
-					Department of Range, Wildlife, and Fisheries Management, <br>
-				(now known as The Department of Natural Resources Management)<br>
-					Texas Tech University Lubbock, Texas</p>
-					</p>
-					<p>*Evaluated vegetation response to disturbance (influence of muskrat graze-out) in an intermediate marsh in the Texas Gulf Coast</p>
-					<p>**Examined the extent and importance of playa wetlands in recharge of the Ogallala aquifer in the Southern Great Plains of Texas. This project developed models to quantify the recharge of the aquifer through playas lakes. I was involved in developing computer programs and setting up data loggers to measure meteorological and other landscape level measurements in the playa wetlands.			    		</p>
-				<h6>Graduate Research Assistant (November 2001 – August 2005)<br>
-				</h6>
-				<p>Department of Range, Wildlife, and Fisheries Management <br>
-	    		  Texas Tech University <br>
-	    		  Major Professor: Dr. Loren M. Smith <br>
-	    		  <br>
-   		        Conducted research on ways of restoring native riparian vegetation in the Middle Rio Grande Valley in New Mexico. My research focused on the effect of controlled water drawdown on the recruitment of native cottonwoods in the Rio Grande floodplain. In addition, I have also evaluated intraspecific (among native cottonwood seedlings) and interspecific competition (between seedlings of cottonwood and exotic saltcedar) under natural field conditions.</p>
-			    		</p>
-	    		<p>			    		  
-	    		<h6>Research Associate (May 1999 – October 2001)</h6>
-			    Centre for Studies in Rural Economy Appropriate Technology and Environment (CREATE),<br>
-    		    St. Joseph's College, Darjeeling, India. <br>
-    		    Collaborative Research Centre of International Forestry Resources and Institutions (IFRI),<br>
-				Indiana University, Bloomington, USA<br>
-		    		    Director: Dr. Milindo Chakrabarti</p>
-			    		<p><h6>May 1999 – October 2001</h6>
-			    		
-		    		    I carried out field surveys (using the International Forestry Resources and Institutions protocol) at 12 sites in North Bengal, India, to study causes underlying extensive deforestation in the northeastern Himalayas. This research involved socio-economic profiling of the forest fringe dwellers and its impact on forest use and biodiversity. As a part of a research team, I was also involved as a field botanist collecting benchmark data on floristic diversity of the remote regions in the northeastern Himalayas.</p>
-			    		<p><h6>October 2000 – January 2001</h6>
-			    		
-			    		 Conducted status surveys of the Manipur Bush Quail (<i>Perdicula manipurensis</i>), in the Buxa Tiger Reserve, India. The species is listed as an endangered species (IUCN) and was last reported to be seen in the area as early as 1930. The project involved surveying of potential habitat in the area and communicating with tribesmen regarding sightings of the bird. This survey was conducted under the “Important Bird Areas” (IBA project), a global Bird Conservation program of the Royal Society for the Protection of Birds (RSPB), UK and Birdlife International, UK.</p>
-			    		<p><h6>June – July 1999</h6>
-			    		
-		    		    Conducted field surveys in Bhagawati Palanchok area in central Nepal on the role of local institutions in the harvest and management of forest resources, as part of IFRI training. Represented CREATE, Darjeeling, India in a research team including members from University of Washington, Yale University and Katmandu University.</p>
-			    		<p>
-			    		<h6>Master's Thesis (1998 – 1999)</h6>
-	    		
-			    		  Department of Botany <br>
-    		    Cytology-Genetics Laboratory <br>
-    		    North Bengal University <br>
-    		    Darjeeling, India. <br>
-    		    Major Advisor: Dr. Kalyan B. Datta DSc. (Retired)</p>
-					<p>Worked on analysing effects of various organic additives on the growth and regeneration of protocorm like bodies (PLBs) in <i>Vanda cristata</i> (Orchidaceae), an endangered orchid species of the northeastern Himalayas, using tissue culture techniques. I standardized the nutrient medium shortening the germination time  to less than a 2 weeks, which can take as long as a year under natural conditions.</p>
-	    		<p>&nbsp;</p>			  </div>
-			</div>
-			<!-- InstanceEndEditable -->
-<div id="rightpanel"> 
-				<h2> News </h2> 			
-			<h5> Nov, 2016 </h5>
-				 <h6> Dr. Bhattacharjee will travel to India as an invited speaker on the use of UAV's in conservation </h6><p/>
-			<h5> Sept, 2016 </h5>
-				<h6> Plant Ecology Lab member, Melissa Bloch wins best poster award at Louisiana Association of Professional Biologists Annual Meeting in Baton Rouge</h6><p/>
-				<h6> Tanner Hart, graduate student presents his research at Louisiana Association of Professional Biologists in Baton Rouge</h6><p/>
-				<h6> Dr. Bhattacharjee was awarded a travel Grant to attend the AMERIFLUX PI meeting in Golden, Colorado</h6><p/>
-			<h5> August 2016</h5>
-				 <h6> ULM Biology undergrad Nicholas ("Nick") Carlson joins the Plant Ecology Lab</a></h6>
-			<h5> June, 2016</h5>
-				 <h6><a href="http://www.ulm.edu/news/2016/1012-ulm-students-research-takes-her-to-the-himalayas.html">ULM Biology undergrad, Melissa Bloch travels to India on a 1-month research project, working in the Himalayas. She was offered  an internship by <a href="http://www.atree.org/">ATREE</a></a></h6>
-  
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-		  </div>
-		  <div id="footer">
-        	<p>Copyright 2016 </p>
-        	</div>     
-                   
-		</div>
-</div></div>
+
+    <!-- Footer -->
+    <footer id="footer" class="center">
+        <p>&copy; 2016 University of Louisiana at Monroe</p>
+    </footer>
 
 </body>
-<!-- InstanceEnd --></html>
+
+</html>
