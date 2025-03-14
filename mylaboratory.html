@@ -241,13 +241,13 @@
     <!-- Left Sidebar -->
     <aside id="leftnav">
       <script>
-          fetch('../components/leftnav.html')
-              .then(response => response.text())
-              .then(data => {
-                  document.getElementById('leftnav').innerHTML = data;
-              });
+        fetch('../components/leftnav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('leftnav').innerHTML = data;
+          });
       </script>
-  </aside>
+    </aside>
 
     <!-- Main Display Area -->
 
@@ -327,79 +327,42 @@
             <h3 class="student-name">Brock Eppinette</h3>
           </div>
 
+          <div class="team-member">
+            <img src="../images/utsav.jpg" alt="Utsav Adhikari" class="student-image">
+            <h3 class="student-name">Utsav Adhikari</h3>
+          </div>
+
+          <div class="team-member">
+            <img src="../images/dian.jpg" alt="Diane Lee Diel" class="student-image">
+            <h3 class="student-name">Diane Lee Diel</h3>
+          </div>
+
+          <div class="team-member">
+            <img src="../images/dian.jpg" alt="Sirjan Baniya" class="student-image">
+            <h3 class="student-name">Sirjan Baniya</h3>
+          </div>
+
+          <div class="team-member">
+            <img src="../images/rachel.jpg" alt="Rachael Christensen" class="student-image">
+            <h3 class="student-name">Rachael Christensen</h3>
+          </div>
+
         </div>
       </section>
 
     </main>
 
-
-
-
-
-    <!-- Right Sidebar: News Section -->
-    <aside id="rightpanel">
-      <div class="news-section">
-        <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
-
-        <div class="news-card">
-          <div class="news-content">
-            <h3>Conservation Talk</h3>
-            <p>Dr. Bhattacharjee was invited to speak at the Balipara Foundation Awards, 4th Season – 9th November 2016,
-              in India on the use of UAVs in conservation.</p>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="news-content">
-            <h3>Best Poster Award</h3>
-            <p>Plant Ecology Lab member, Melissa Bloch, wins the Best Poster Award at the Louisiana Association of
-              Professional Biologists Annual Meeting in Baton Rouge.</p>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="news-content">
-            <h3>Graduate Research Presentation</h3>
-            <p>Graduate student Tanner Hart presents his research at the Louisiana Association of Professional
-              Biologists in Baton Rouge.</p>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="news-content">
-            <h3>Research Grant Awarded</h3>
-            <p>Dr. Bhattacharjee was awarded a travel grant to attend the AMERIFLUX PI meeting in Golden, Colorado.</p>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="news-content">
-            <h3>New Lab Member</h3>
-            <p>ULM Biology undergrad Nicholas ("Nick") Carlson joins the Plant Ecology Lab.</p>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="news-content">
-            <h3>Research in the Himalayas</h3>
-            <p>
-              <a href="http://www.ulm.edu/news/2016/1012-ulm-students-research-takes-her-to-the-himalayas.html">
-                ULM Biology undergrad, Melissa Bloch, travels to India on a 1-month research project in the Himalayas.
-                She was offered an internship by ATREE.
-              </a>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </aside>
-
-
   </div>
 
   <!-- Footer -->
-  <footer id="footer" class="center">
-    <p>&copy; 2016 University of Louisiana at Monroe</p>
+  <footer id="footer" class="center"> <!-- Empty footer element -->
+    <script>
+      fetch('../components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    </script>
   </footer>
 </body>
 

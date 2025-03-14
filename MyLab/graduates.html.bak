@@ -1,140 +1,216 @@
-<html><!-- InstanceBegin template="/Templates/mylaboratory.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Plant Ecology at ULM</title>
-    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen" />
-        
-</head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plant Ecology at ULM - Graduate Students</title>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- SwiperJS for Rotating Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <style>
+        /* Swiper Container */
+        .swiper-container {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Individual Slide */
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .swiper-slide:hover {
+            transform: scale(1.05);
+        }
+
+        /* Student Image */
+        .student-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Student Name */
+        .student-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #590100;
+        }
+
+        /* Research Focus & Projects */
+        .research-interests,
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        /* Highlighted Section */
+        .highlight-text {
+            font-weight: bold;
+            color: #77000F;
+        }
+
+        /* Swiper Arrows */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #590100;
+        }
+
+        /* Swiper Pagination Dots */
+        .swiper-pagination-bullet {
+            background-color: #77000F;
+        }
+    </style>
+    
+</head>
 
 <body>
-<div id="metanav">
-	<div id="ulm-icon">
-		<img src="../images/ULM-icon.jpg"  alt="ULM">
-	</div>
 
-	<div id="metanav-links"> 
-	   	<ul>
-            	<li><a href="http://ulm.edu/biology/">Department of Biology</a></li>
-                <li><a href="http://ulm.edu/biology/faculty.html">Faculty</a></li>
-                <li><a href="http://ulm.edu/biology/undergraduate-program.html">Undergraduate Program</a></li>
-                <li><a href="http://ulm.edu/biology/graduate-program.html">Graduate Program</a></li>
-                <li><a href="http://ulm.edu/biology/student-groups.html">Student Groups</a></li>
-                <li><a href="http://ulm.edu/biology/browse-on-the-bayou.html">Browse on the Bayou</a></li>
-        </ul>
-	</div>
-</div>
+    <!-- Meta Navigation -->
+    <header id="metanav">
+        <script>
+            fetch('../components/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('metanav').innerHTML = data;
+                });
+        </script>
+    </header>
+
+    <div id="wrapper">
+
+        <!-- Page Content Wrapper -->
+        <div class="content-wrapper">
+
+            <!-- Left Navigation -->
+            <aside id="leftnav">
+                <div class="left-images">
+                    <img src="../images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe" width="119"
+                        height="118">
+                    <img src="../images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85">
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main id="maindisplay">
 
 
-<div id="wrapper">
-    
-		<div id="joydeep">
-			<h1 class="black">dr. joydeep </h1> <h1> bhattacharjee </h1>
-</div>
-            
-		<div id="banner">
-  <img src="../images/bromeliad.jpg" width="900" height="150" alt="Banner bromeliad"></div>
-            
-		<div id="body"> 
-            
-          <div id="leftnav">
-                      <ul>
-                          <li><a href="../index.html"> HOME</a></li> 
-                          <li><a href="mylaboratory.html">LABORATORY</a></li> 
-                          <li><a href="../carbontower.html">CARBON TOWER</a></li>
-						  <li><a href="../phenocam.html">PHENOCAM</a></li>
-                          <li><a href="../ouchita.html">OUACHITA WMA</a></li>
-                          <li><a href="../canp.html">BIOLOGICAL STATION</a></li>
-                          <li><a href="../wrec.html">WREC</a></li>
-                          <li><a href="../gallery.html">GALLERY</a></li>
-                          <li><a href="../links.html">LINKS</a></li>
-                          <br>
-                          <br>
-                          <li> <img src="../images/ULM Circle Logo.jpg" width="119" height="118" alt="University of Louisiana at Monroe"> </li>
-                           <li> <img src="../images/ulm-warhawks.jpeg" width="125" height="85" alt="ULM"></li>
-                      </ul>
-    </div>
-			<!-- InstanceBeginEditable name="Main" -->
-			<div id="maindisplay">
-			  <div id="topnav">
-                	<ul>
-                        <li><a href="../MyLab/research.html">Research Interests</a></li>
-						<li><a href="graduates.html">Graduate Students</a></li>
-                        <li><a href="undergraduates.html">Undergraduates</a></li>
+                <!-- Secondary Navigation -->
+                <section id="topnav">
+                    <ul>
+                        <li><a href="../MyLab/research.html"><i class="fas fa-flask"></i> Research Interests</a></li>
+                        <li><a href="graduates.html"><i class="fas fa-user-graduate"></i> Graduate Students</a></li>
+                        <li><a href="undergraduates.html"><i class="fas fa-users"></i> Undergraduates</a></li>
                     </ul>
-		      </div>
-			  <div id="centertext">
-			    <h2>Graduate Students</h2>
-			    <p><img src="../images/herronprofile.jpg" width="280" height="200" alt="Matthew Herron Louisiana"></p>
-                <h3>Matthew Herron</h3>
-                <p>Matthew received a dual B.A. from Louisiana State University A&M in 2009 in English and German. He has worked as an artist, naturalist and educator. He joined the lab in the summer of 2012.</p>
-                <p><h8>Research Interests:</h8> </p>
-                <p>Community Restoration Ecology <br>
-                  Microtopography and Disturbance-driven Land Mosaics <br>
-                  Plant Conservation and Citizen Science <br>
-                  Land Management and Sustainable Forestry <br>
-                  Natural History and Biodiversity </p>
-                <p><h8>Current Project:</h8> </p>
-                <p>Matthew will be working on the Ouachita Wildlife Management Area (OWMA) measuring the effects of various land management methods on 		community structure, diversity and non-native invasion in Bottomland Hardwood Forests. Part of his work will go toward writing a management plan for the OWMA.</p>
-                <p>&nbsp;</p>
-				<p><img src="../images/jaredstreeter" width="200" height="280" alt="Jared Streeter Louisiana"></p>
-                <h3>Jared Streeter</h3>
-                <p>Jared received his B.S. in Biology from the University of Louisiana at Monroe in 2012. He is working in the Plant Ecology Lab on Carbon Sequestration/Net Ecosystem Exchange in Bottomland Hardwoods and using the Eddy Covariance Method.</p>
-                <p><h8>Research Interests:  </h8></p>
-                <p>Carbon Sequestration<br>
-                Bottomland Hardwoods<br>
-                Plant Ecology<br>
-                Climate Change</p>
-                <p><h8>Current Project:   </h8> </p>
-                <p>Jared's project entails using Eddy Covariance Method to monitor the flux of gases such as CO2 and H20 as well as energy between the atmosphere and the terrestrial environment. Insturments are mounted atop a 36.6m (120 f) tower that continuously monitors and gathers data on greenhouse gases. The data will then be uploaded to the AmeriFlux network, member of the FLUXNET network, where to data will become part of a national and global analysis of fluxes worldwide.</p>
-                <p>&nbsp;</p>
-				<!-- JENAE-->
-				<p><img src="../images/jenae-profile.jpg" width="280" height="200" alt="Jenae Clay">                                
-                <h3>Jenae' Clay</h3> 
-				<p>Jenae' Clay graduated from ULM with Honors in the University in May 2013 with a Bachelor's of Science in Atmospheric Science and a minor in French.  Her interests include the overlapping aspects of climate and weather with the biosphere.  During the summer of 2013, she received funding from Tulane University's Oscar Lee Putnam Cultural and Intellectual Enrichment grant to conduct research in the Ouachita Wildlife Management Area.  The research is still ongoing, and she is currently exploring the effect of microclimates on woody seedlings in a bottomland hardwood forest undergoing secondary succession.   
-				
-				<p><h2>Former Graduate Students</h2></p>
-                <p>&nbsp;</p>
-				
-				<p><h3>Matthew Reid</h3></p>
-				<p><br><img src="../images/mattreid.jpg" width="200" height="280" alt="Matthew Reid Tennessee"></p>
-                <p>Matthew is currently a Ph.D. student at University of Louisville. More details <a href="https://louisville.edu/biology/emerylab/about">here</a>.</p>
-				
-				<p><h3>Alex Fotis</h3></p>
-                <p>Alex is currently a Ph.D. student at Ohio State University. More details <a href="http://eeob.osu.edu/people/fotis">here</a>.</p>
-                
-				<p><h3>Jessica Wakefield</h3><br style="clear: both">
-                </p>
-              </div>
-		    </div>
-			<!-- InstanceEndEditable -->
-			<div id="rightpanel"> 
-				<h2> News </h2> 
-				<h5> March 8, 2014
-				<h6><a href="http://www.laacademy.org/"> Plant Lab Grad Students Matthew and Jared win best oral presentation at Louisiana Academy of Sciences Annual Meeting</h6>
-				<h5> February 1, 2014 </h5>
-				<h6><a href="http://www.lnps.org/index_files/News.htm"> Plant Lab Member Matthew Herron gives presentation at the LNPS Annual 2014 Winter Meeting and appears in Newsletter</h6>
-				<h5>September 3, 2013</h5>
-				<h6><a href="../Files/ULM Graduate Receives Grant to Study Plant Ecology - MyArkLaMiss.com - KTVE NBC 10 - KARD FOX 14 - Your homepage for the latest News, Weather and Sports in the ArkLaMiss!.pdf">Plant Lab Member Jenae' Clay appears in ArkLaMiss News!</a></h6>
-				<h5>December 2012</h5>
-                <h6><a href="../Files/Wakefield_2012.pdf">Jessica Wakefield and Dr. B publish "Effect of Air Pollution on Chlorophyll Content and Lichen Morphology in Northeastern Louisiana" in Evansia</a></h6>
-                <h5>December 6, 2012</h5>
-			  <h6><a href="http://www.thenewsstar.com/article/20121204/NEWS01/121204016/ULM-biology-professor-awarded-grant-fund-wildlife-habitat-research">Dr. Joydeep awarded grant to fund wildlife research</a></h6>
-				<h5>October 11, 2012</h5>
-				<h6> Matt Reid has winning photos in Black Bayou Lake Photo Contest</h6>
-			  <h5> September 7, 2012 </h5>
-				<h6> Undergraduates Simi, Ray and Jenae' join the plant lab!</h6>
-			  <h5>June 12, 2012</h5>
-			  <h6>Matthew Herron and Jared Streeter join the plant lab!</h6>
-			  <h5>March 15, 2012</h5>
-                <h6><a href="http://www.ulm.edu/universityrelations/news/mar12/biology.html">Stephanie Allen and Cathy Ho win 1st place at Louisiana Academy of Sciences Poster Session</a></h6>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-		  </div>
-		  <div id="footer">
-        	<p>Copyright 2012 </p>
-        	</div>     
-                   
-		</div>
-</div>
+                </section>
+
+                <article id="centertext">
+                    <header class="content-header">
+                        <h2><i class="fas fa-user-graduate"></i> Graduate Students</h2>
+                    </header>
+
+                    <!-- Swiper Carousel -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+                            <!-- Student Profile: Grant Wallace Erbelding -->
+                            <div class="swiper-slide">
+                                <img src="../images/Grant.png" alt="Grant Wallace Erbelding" class="student-image">
+                                <h3 class="student-name">Grant Wallace Erbelding</h3>
+                                <p class="bio-text">Graduate Researcher specializing in aerial imagery utilization for
+                                    Bottomland Hardwood Forest characterization.</p>
+                                <h4 class="section-heading"><i class="fas fa-flask"></i> Research Focus</h4>
+                                <ul class="research-interests">
+                                    <li>Aerial Imagery Utilization</li>
+                                    <li>Bottomland Hardwood Forest Characterization</li>
+                                    <li>Machine-Learning Applications</li>
+                                </ul>
+                                <h4 class="section-heading"><i class="fas fa-project-diagram"></i> Current Project</h4>
+                                <p class="highlight-text">Developing machine-learning models to detect vegetation stress
+                                    in canopy ecosystems.</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Swiper Pagination & Navigation -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                </article>
+            </main>
+
+            <!-- Right Sidebar: News Section -->
+            <aside id="rightpanel">
+                <div class="news-section">
+                    <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
+                    <div class="news-card">
+                        <div class="news-content">
+                            <h3>Thesis Defense</h3>
+                            <p>Graduate student Bibek Kandel defends his MS thesis and moves to Virginia Tech for his
+                                Ph.D.</p>
+
+                            <h3>Poster Award</h3>
+                            <p>Lab member Bibek Kandel wins Best Poster Presentation Award at the ULM Student Research
+                                Symposium.</p>
+
+                            <h3>Research Presentation</h3>
+                            <p>Subash Sapkota presents at NEON GLUG workshop as the only undergraduate selected.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2024 University of Louisiana at Monroe</p>
+    </footer>
+
+    <!-- SwiperJS for Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    </script>
 
 </body>
-<!-- InstanceEnd --></html>
+
+</html>

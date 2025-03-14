@@ -2,189 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Plant Ecology at ULM – Gallery</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Plant Ecology at ULM – Flux Tower</title>
 
-        /* Meta Navigation */
-        #metanav {
-            background-color: #2c3e50;
-            /* padding: 15px 0; */
-            text-align: center;
-        }
 
-        #metanav ul {
-            list-style: none;
-            padding: 0; 
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        #metanav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
-        }
-
-        #metanav ul li a:hover {
-            color: #f39c12;
-        }
-
-        /* Content Wrapper */
-        .content-wrapper {
-            display: grid;
-            grid-template-columns: 200px 1fr 250px;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        /* Left Sidebar */
-        #leftnav {
-            background: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .left-images img {
-            width: 80%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        /* Main Content */
-        #maindisplay {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Gallery Styling */
-        #gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        #gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        #gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Right Sidebar */
-        #rightpanel {
-            background: #f7f7f7;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .news-section h2 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-
-        .news-card {
-            background: white;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Footer */
-        #footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 20px;
-        }
-
-        #footer a {
-            color: #f39c12;
-            text-decoration: none;
-        }
-
-        #footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- Meta Navigation (loaded via fetch) -->
-    <header id="metanav">
-        <script>
-            fetch('../components/navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('metanav').innerHTML = data;
-                });
-        </script>
-    </header>
 
-    <!-- Page Content Wrapper -->
-    <div class="content-wrapper">
+	<!-- Meta Navigation (loaded via fetch) -->
+	<header id="metanav">
+		<script>
+			fetch('../components/navbar.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('metanav').innerHTML = data;
+				});
+		</script>
 
-        <!-- Left Sidebar -->
-        <aside id="leftnav">
-            <div class="left-images">
-                <img src="images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe Logo">
-                <img src="images/ulm-warhawks.jpeg" alt="ULM Warhawks">
-            </div>
-        </aside>
+	</header>
 
-        <!-- Main Content -->
-        <main id="maindisplay">
-            <section id="centertext">
-                <header>
-                    <h2><i class="fas fa-camera"></i> Gallery</h2>
-                    <p>By <strong>Dr. Joydeep Bhattacharjee</strong></p>
-                </header>
 
-                <div id="gallery">
-                    <img src="images/Gallery/tree.gif" alt="Nature Image">
-                    <img src="images/Gallery/rainbow.gif" alt="Nature Image">
-                    <img src="images/Gallery/ludwigiasphinx.jpg" alt="Nature Image">
-                    <img src="images/Gallery/mushroom.jpg" alt="Nature Image">
-                    <img src="images/Gallery/idk.JPG" alt="Nature Image">
-                    <img src="images/Gallery/idkkk.JPG" alt="Nature Image">
-                    <img src="images/Gallery/water.JPG" alt="Nature Image">
-                    <img src="images/Gallery/seaoats.jpg" alt="Nature Image">
-                </div>
+	<!-- Page Content Wrapper -->
+	<div class="content-wrapper">
+		<!-- Left Sidebar -->
+		<aside id="leftnav">
+			<script>
+				fetch('../components/leftnav.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('leftnav').innerHTML = data;
+					});
+			</script>
+		</aside>
 
-                <p class="center">
-                    Click <a href="http://www.panoramio.com/user/5160434" target="_blank"><i class="fas fa-external-link-alt"></i> HERE</a> for more of Dr. Bhattacharjee's photographs at Panaramio.com.
-                </p>
-            </section>
-        </main>
+            <!-- Main Content -->
+            <main id="maindisplay">
+                <section id="centertext">
+                    <header>
+                        <h2><i class="fas fa-camera"></i> Gallery</h2>
+                        <p>By <strong>Dr. Joydeep Bhattacharjee</strong></p>
+                    </header>
 
-        <!-- Right Sidebar -->
-        <!-- <aside id="rightpanel">
+                    <div id="gallery">
+                        <img src="images/Gallery/tree.gif" alt="Nature Image">
+                        <img src="images/Gallery/rainbow.gif" alt="Nature Image">
+                        <img src="images/Gallery/ludwigiasphinx.jpg" alt="Nature Image">
+                        <img src="images/Gallery/mushroom.jpg" alt="Nature Image">
+                        <img src="images/Gallery/idk.JPG" alt="Nature Image">
+                        <img src="images/Gallery/idkkk.JPG" alt="Nature Image">
+                        <img src="images/Gallery/water.JPG" alt="Nature Image">
+                        <img src="images/Gallery/seaoats.jpg" alt="Nature Image">
+                    </div>
+
+                    <p class="center">
+                        Click <a href="http://www.panoramio.com/user/5160434" target="_blank"><i
+                                class="fas fa-external-link-alt"></i> HERE</a> for more of Dr. Bhattacharjee's
+                        photographs at Panaramio.com.
+                    </p>
+                </section>
+            </main>
+
+            <!-- Right Sidebar -->
+            <!-- <aside id="rightpanel">
             <div class="news-section">
                 <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
 
@@ -214,12 +99,19 @@
                 </div>
             </div>
         </aside> -->
-        
+
+        </div>
     </div>
 
     <!-- Footer -->
-    <footer id="footer">
-        <p>&copy; 2024 University of Louisiana at Monroe | <a href="#">Privacy Policy</a></p>
+    <footer id="footer" class="center"> <!-- Empty footer element -->
+        <script>
+            fetch('../components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script>
     </footer>
 </body>
 

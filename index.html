@@ -13,147 +13,91 @@
 </head>
 
 <body>
-    <!-- Meta Navigation (loaded via fetch) -->
-    <header id="metanav">
-        <script>
-            fetch('../components/navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('metanav').innerHTML = data;
-                });
-        </script>
 
-    </header>
+    <div id="content">
 
-    <!-- Main Content Layout -->
-    <div class="content-wrapper">
-
-
-        <!-- Left Sidebar -->
-
-        <aside id="leftnav" style="border: 2px solid #eed533;">
+        <!-- Meta Navigation (loaded via fetch) -->
+        <header id="metanav">
             <script>
-                fetch('../components/leftnav.html')
+                fetch('../components/navbar.html')
                     .then(response => response.text())
                     .then(data => {
-                        document.getElementById('leftnav').innerHTML = data;
+                        document.getElementById('metanav').innerHTML = data;
                     });
             </script>
-        </aside>
+
+        </header>
+
+        <!-- Main Content Layout -->
+        <div class="content-wrapper">
 
 
-        <!-- Main Display Area -->
-        <main id="maindisplay">
-            <!-- Secondary Navigation -->
-            <section id="topnav">
-                <ul>
-                    <li><a href="Home/professional.html" class="nav-link"><i class="fas fa-briefcase"></i> Professional
-                            Preparation</a></li>
-                    <li><a href="Home/past.html" class="nav-link"><i class="fas fa-history"></i> Past Appointments</a>
-                    </li>
-                    <li><a href="Home/Publications.html" class="nav-link"><i class="fas fa-book-open"></i>
-                            Publications</a></li>
-                    <li><a href="Home/Courses.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i>
-                            Courses</a></li>
-                    <li><a href="Home/Other.html" class="nav-link"><i class="fas fa-handshake"></i> Collaborators</a>
-                    </li>
-                    <li><a href="Home/Grants.html" class="nav-link"><i class="fas fa-award"></i> Grants</a></li>
-                </ul>
-            </section>
+            <!-- Left Sidebar -->
+
+            <aside id="leftnav">
+                <script>
+                    fetch('../components/leftnav.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('leftnav').innerHTML = data;
+                        });
+                </script>
+            </aside>
+
+
+            <!-- Main Display Area -->
+            <main id="maindisplay">
+                <!-- Secondary Navigation -->
+                <section id="topnav">
+                    <ul>
+                        <li><a href="Home/professional.html" class="nav-link"><i class="fas fa-briefcase"></i>
+                                Professional
+                                Preparation</a></li>
+                        <li><a href="Home/past.html" class="nav-link"><i class="fas fa-history"></i> Past
+                                Appointments</a>
+                        </li>
+                        <li><a href="Home/Publications.html" class="nav-link"><i class="fas fa-book-open"></i>
+                                Publications</a></li>
+                        <li><a href="Home/Courses.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i>
+                                Courses</a></li>
+                        <li><a href="Home/Other.html" class="nav-link"><i class="fas fa-handshake"></i>
+                                Collaborators</a>
+                        </li>
+                        <li><a href="Home/Grants.html" class="nav-link"><i class="fas fa-award"></i> Grants</a></li>
+                    </ul>
+                </section>
 
 
 
-            <!-- Center Content -->
-            <section id="centertext">
-                <div class="profile-card">
-                    <div class="image-container">
-                        <img src="images/drbprofiletower.jpg" alt="Dr. Joydeep Bhattacharjee" class="profile-image">
-                        <div class="image-overlay"></div>
-                    </div>
-                    <div class="contact-info">
-                        <h1>Dr. Joydeep Bhattacharjee</h1>
-                        <p class="position">Professor of Biology</p>
-                        <div class="contact-details">
-                            <p><i class="fas fa-map-marker-alt"></i>221D Hanna Hall<br>University of Louisiana at
-                                Monroe<br>Monroe, LA 71029-0520</p>
-                            <p><i class="fas fa-phone"></i>318-342-1946</p>
-                            <p><i class="fas fa-envelope"></i><a href="mailto:joydeep@ulm.edu">joydeep@ulm.edu</a></p>
+                <!-- Center Content -->
+                <section id="centertext">
+                    <div class="profile-card">
+                        <div class="image-container">
+                            <img src="images/drbprofiletower.jpg" alt="Dr. Joydeep Bhattacharjee" class="profile-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="contact-info">
+                            <h1>Dr. Joydeep Bhattacharjee</h1>
+                            <p class="position">Professor of Biology</p>
+                            <div class="contact-details">
+                                <p><i class="fas fa-map-marker-alt"></i>221D Hanna Hall<br>University of Louisiana at
+                                    Monroe<br>Monroe, LA 71029-0520</p>
+                                <p><i class="fas fa-phone"></i>318-342-1946</p>
+                                <p><i class="fas fa-envelope"></i><a href="mailto:joydeep@ulm.edu">joydeep@ulm.edu</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-        </main>
-
-
-        <!-- Right Sidebar -->
-
-
-        <!-- <aside id="rightpanel">
-            <div class="news-section">
-                <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>New Lab Members</h3>
-                        <p>Plant Ecology Lab welcomes Grant Erbelding and Joshua Russell.</p>
-                        <span class="news-date">May 2023</span>
-                    </div>
-                </div>
+            </main>
 
 
 
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>Graduate Student Defends Thesis and Moves to Virginia Tech</h3>
-                        <h3>Thesis Defense</h3>
-                        <p>Graduate student Bibek Kandel defends his MS thesis and leaves for Virginia Tech for his
-                            Ph.D.</p>
-                    </div>
-                </div>
-
-
-
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>Lab Member Wins Best Poster Presentation Award</h3>
-                        <h3>Poster Award</h3>
-                        <p>Lab member Bibek Kandel (grad) wins the Best Poster Presentation Award at the ULM Student
-                            Research Symposium.</p>
-                    </div>
-                </div>
-
-
-
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>Undergraduate Lab Member Wins Best Poster Award</h3>
-                        <h3>Undergrad Award</h3>
-                        <p>Lab member Subash Sapkota (undergrad) wins the Best Poster Presentation Award
-                            (undergrad-level) at the ULM Student Research Symposium.</p>
-
-                    </div>
-                </div>
-
-
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>Undergraduate Presents Research at NEON GLUG Workshop</h3>
-                        <h3>Research Presentation</h3>
-                        <p>Subash Sapkota (undergrad) travels to Madison, Wisconsin to present research at a NEON GLUG
-                            workshop—the only undergraduate selected for this event.</p>
-
-                    </div>
-                </div>
-
-
-            </div>
-        </aside> -->
-
-
+        </div>
     </div>
-
     <!-- Footer (loaded via fetch) -->
-    <footer id="footer" class="center"> <!-- Empty footer element -->
+    <footer id="footer" class="center">
         <script>
             fetch('../components/footer.html')
                 .then(response => response.text())
@@ -162,6 +106,8 @@
                 });
         </script>
     </footer>
+
+
 
 </body>
 

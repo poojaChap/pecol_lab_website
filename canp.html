@@ -27,12 +27,15 @@
     <!-- Page Content Wrapper -->
     <div class="content-wrapper">
         <!-- Left Sidebar -->
+
         <aside id="leftnav">
-            <div class="left-images">
-                <img src="../images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe Logo" width="119"
-                    height="118">
-                <img src="../images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85">
-            </div>
+            <script>
+                fetch('../components/leftnav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('leftnav').innerHTML = data;
+                    });
+            </script>
         </aside>
 
 
@@ -48,20 +51,33 @@
                 <section class="content-section">
                     <h3><i class="fas fa-seedling"></i> Background</h3>
                     <p>
-                        The <strong>Charles Allen Nature Preserve</strong> is an <strong>80-acre outdoor classroom</strong> located in the rolling <strong>Ouachita Hills Region</strong> near Columbia, Louisiana, about <strong>30 miles from ULM</strong>.
+                        The <strong>Charles Allen Nature Preserve</strong> is an <strong>80-acre outdoor
+                            classroom</strong> located in the rolling <strong>Ouachita Hills Region</strong> near
+                        Columbia, Louisiana, about <strong>30 miles from ULM</strong>.
                     </p>
                     <p>
-                        The property was <strong>donated to ULM in 2000</strong> by <strong>Dr. Harry Winters</strong>, in honor of <strong>Dr. Charles Allen</strong>, a former ULM professor and <strong>renowned botanist</strong> in Louisiana. Dr. Winters and Dr. Allen have co-authored several books on <strong>Louisiana and Gulf South plant species</strong>, and the <strong>Charles Allen Nature Preserve</strong> serves as one of their greatest contributions to conservation.
+                        The property was <strong>donated to ULM in 2000</strong> by <strong>Dr. Harry Winters</strong>,
+                        in honor of <strong>Dr. Charles Allen</strong>, a former ULM professor and <strong>renowned
+                            botanist</strong> in Louisiana. Dr. Winters and Dr. Allen have co-authored several books on
+                        <strong>Louisiana and Gulf South plant species</strong>, and the <strong>Charles Allen Nature
+                            Preserve</strong> serves as one of their greatest contributions to conservation.
                     </p>
                     <p>
-                        Efforts are currently underway to <strong>improve accessibility</strong> for students and researchers. The goal is to transform this <strong>biological station</strong> into a <strong>premier research site</strong> for scientists across Louisiana and beyond.
+                        Efforts are currently underway to <strong>improve accessibility</strong> for students and
+                        researchers. The goal is to transform this <strong>biological station</strong> into a
+                        <strong>premier research site</strong> for scientists across Louisiana and beyond.
                     </p>
                 </section>
 
                 <section class="content-section">
                     <h3><i class="fas fa-paw"></i> 2016 ULM BioBlitz</h3>
                     <p>
-                        On <strong>October 29, 2016</strong>, ULM <strong>biology students</strong> and faculty organized the <strong>ULM BioBlitz</strong>, an event to showcase the <strong>Charles Allen Nature Preserve</strong>. This student-led event featured <strong>guided hikes</strong> across the rolling Ouachita Hills, allowing participants to <strong>identify as many species as possible</strong>—including <strong>birds, plants, reptiles, amphibians, mammals, and butterflies</strong>.
+                        On <strong>October 29, 2016</strong>, ULM <strong>biology students</strong> and faculty
+                        organized the <strong>ULM BioBlitz</strong>, an event to showcase the <strong>Charles Allen
+                            Nature Preserve</strong>. This student-led event featured <strong>guided hikes</strong>
+                        across the rolling Ouachita Hills, allowing participants to <strong>identify as many species as
+                            possible</strong>—including <strong>birds, plants, reptiles, amphibians, mammals, and
+                            butterflies</strong>.
                     </p>
                     <p class="center">
                         <img src="../images/bioblitz_full.png" alt="ULM BioBlitz Event" width="530" height="338">
@@ -71,11 +87,16 @@
                 <section class="content-section">
                     <h3><i class="fas fa-clipboard-check"></i> Goals of the BioBlitz</h3>
                     <ul>
-                        <li>📌 Discover, learn about, and document the <strong>biological diversity</strong> of the <strong>Charles Allen Nature Preserve</strong>.</li>
+                        <li>📌 Discover, learn about, and document the <strong>biological diversity</strong> of the
+                            <strong>Charles Allen Nature Preserve</strong>.
+                        </li>
                         <li>📌 Educate students and faculty on <strong>natural history</strong> and biodiversity.</li>
-                        <li>📌 Engage both <strong>science and non-science majors</strong> in hands-on outdoor experiences.</li>
-                        <li>📌 Strengthen the <strong>connection between faculty and students</strong> through experiential learning.</li>
-                        <li>📌 Promote <strong>conservation awareness</strong> and research on Louisiana’s biodiversity.</li>
+                        <li>📌 Engage both <strong>science and non-science majors</strong> in hands-on outdoor
+                            experiences.</li>
+                        <li>📌 Strengthen the <strong>connection between faculty and students</strong> through
+                            experiential learning.</li>
+                        <li>📌 Promote <strong>conservation awareness</strong> and research on Louisiana’s biodiversity.
+                        </li>
                     </ul>
                 </section>
 
@@ -91,15 +112,18 @@
                         <tbody>
                             <tr>
                                 <td>8:00 AM - 10:00 AM</td>
-                                <td>🌅 <strong>Early Bird Hike</strong> (Primary focus: Birds, but all species are included)</td>
+                                <td>🌅 <strong>Early Bird Hike</strong> (Primary focus: Birds, but all species are
+                                    included)</td>
                             </tr>
                             <tr>
                                 <td>10:30 AM - 1:00 PM</td>
-                                <td>📢 <strong>Welcome Address & Exploration</strong> (Meet the faculty, view live specimens, and tally morning species counts)</td>
+                                <td>📢 <strong>Welcome Address & Exploration</strong> (Meet the faculty, view live
+                                    specimens, and tally morning species counts)</td>
                             </tr>
                             <tr>
                                 <td>1:00 PM - 3:00 PM</td>
-                                <td>🌿 <strong>Nature Hike 1</strong> (Focus: Reptiles, amphibians, and mammal tracks)</td>
+                                <td>🌿 <strong>Nature Hike 1</strong> (Focus: Reptiles, amphibians, and mammal tracks)
+                                </td>
                             </tr>
                             <tr>
                                 <td>1:00 PM - 3:00 PM</td>
@@ -107,7 +131,8 @@
                             </tr>
                             <tr>
                                 <td>3:30 PM - 4:30 PM</td>
-                                <td>📊 <strong>Tally Up & Check Out</strong> (Final species count, awards, and closing remarks)</td>
+                                <td>📊 <strong>Tally Up & Check Out</strong> (Final species count, awards, and closing
+                                    remarks)</td>
                             </tr>
                         </tbody>
                     </table>
@@ -116,10 +141,12 @@
                 <section class="content-section">
                     <h3><i class="fas fa-user-edit"></i> Registration</h3>
                     <p>
-                        Interested in participating? Click the link below to <strong>register for the 2016 BioBlitz</strong>:
+                        Interested in participating? Click the link below to <strong>register for the 2016
+                            BioBlitz</strong>:
                     </p>
                     <p class="center">
-                        <a href="https://docs.google.com/forms/d/1N1ZXvWwiNVWvOhMNeyjsPtS6cSBD_vkvuKZskJlsGVI/viewform" target="_blank" class="registration-link">
+                        <a href="https://docs.google.com/forms/d/1N1ZXvWwiNVWvOhMNeyjsPtS6cSBD_vkvuKZskJlsGVI/viewform"
+                            target="_blank" class="registration-link">
                             📝 <strong>Register Here</strong>
                         </a>
                     </p>
@@ -129,37 +156,46 @@
 
 
         <!-- Right Sidebar: News Section -->
-        <aside id="rightpanel">
+        <!-- <aside id="rightpanel">
             <div class="news-section">
                 <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
 
                 <div class="news-card">
                     <div class="news-content">
                         <h3>Conservation Talk</h3>
-                        <p>Dr. Bhattacharjee was invited to speak at the Balipara Foundation Awards in India about the use of UAVs in conservation.</p>
+                        <p>Dr. Bhattacharjee was invited to speak at the Balipara Foundation Awards in India about the
+                            use of UAVs in conservation.</p>
                     </div>
                 </div>
 
                 <div class="news-card">
                     <div class="news-content">
                         <h3>Best Poster Award</h3>
-                        <p>Plant Ecology Lab member, Melissa Bloch, wins Best Poster Award at the Louisiana Association of Professional Biologists.</p>
+                        <p>Plant Ecology Lab member, Melissa Bloch, wins Best Poster Award at the Louisiana Association
+                            of Professional Biologists.</p>
                     </div>
                 </div>
 
                 <div class="news-card">
                     <div class="news-content">
                         <h3>Graduate Research Presentation</h3>
-                        <p>Graduate student Tanner Hart presents his research at the Louisiana Association of Professional Biologists.</p>
+                        <p>Graduate student Tanner Hart presents his research at the Louisiana Association of
+                            Professional Biologists.</p>
                     </div>
                 </div>
             </div>
-        </aside>
+        </aside> -->
     </div>
 
     <!-- Footer -->
-    <footer id="footer">
-        <p>&copy; 2024 University of Louisiana at Monroe</p>
+    <footer id="footer" class="center"> <!-- Empty footer element -->
+        <script>
+            fetch('../components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script>
     </footer>
 
 </body>

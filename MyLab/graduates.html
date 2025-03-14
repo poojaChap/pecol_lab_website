@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Plant Ecology at ULM - Graduate Students</title>
-    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Plant Ecology at ULM – Flux Tower</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- SwiperJS for Rotating Carousel -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="../css/styles.css">
     <style>
         /* Swiper Container */
         .swiper-container {
@@ -79,11 +79,13 @@
             background-color: #77000F;
         }
     </style>
+
+
 </head>
 
 <body>
 
-    <!-- Meta Navigation -->
+    <!-- Meta Navigation (loaded via fetch) -->
     <header id="metanav">
         <script>
             fetch('../components/navbar.html')
@@ -92,21 +94,19 @@
                     document.getElementById('metanav').innerHTML = data;
                 });
         </script>
+
     </header>
 
-    <div id="wrapper">
 
-        <!-- Page Content Wrapper -->
-        <div class="content-wrapper">
-
-            <!-- Left Navigation -->
-            <aside id="leftnav">
-                <div class="left-images">
-                    <img src="../images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe" width="119"
-                        height="118">
-                    <img src="../images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85">
-                </div>
-            </aside>
+    <!-- Page Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Left Sidebar -->
+        <aside id="leftnav">
+            <ul>
+                <li><img src="../images/ulm.logo.jpg" alt="ULM Logo" width="119" height="118"></li>
+                <li><img src="../images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85"></li>
+            </ul>
+        </aside>
 
             <!-- Main Content -->
             <main id="maindisplay">
@@ -158,57 +158,14 @@
                 </article>
             </main>
 
-            <!-- Right Sidebar: News Section -->
-            <aside id="rightpanel">
-                <div class="news-section">
-                    <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
-                    <div class="news-card">
-                        <div class="news-content">
-                            <h3>Thesis Defense</h3>
-                            <p>Graduate student Bibek Kandel defends his MS thesis and moves to Virginia Tech for his
-                                Ph.D.</p>
+        </main>
 
-                            <h3>Poster Award</h3>
-                            <p>Lab member Bibek Kandel wins Best Poster Presentation Award at the ULM Student Research
-                                Symposium.</p>
-
-                            <h3>Research Presentation</h3>
-                            <p>Subash Sapkota presents at NEON GLUG workshop as the only undergraduate selected.</p>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-
-        </div>
     </div>
 
     <!-- Footer -->
     <footer id="footer">
-        <p>&copy; 2024 University of Louisiana at Monroe</p>
+        <p>&copy; 2023 University of Louisiana at Monroe</p>
     </footer>
-
-    <!-- SwiperJS for Carousel -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            grabCursor: true,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            }
-        });
-    </script>
 
 </body>
 

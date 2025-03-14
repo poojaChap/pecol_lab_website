@@ -29,12 +29,15 @@
     <div class="content-wrapper">
 
         <!-- Left Sidebar -->
-        <aside id="leftnav">
 
-            <div class="left-images">
-                <img src="images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe" width="119" height="118">
-                <img src="images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85">
-            </div>
+        <aside id="leftnav">
+            <script>
+                fetch('../components/leftnav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('leftnav').innerHTML = data;
+                    });
+            </script>
         </aside>
 
 
@@ -103,7 +106,7 @@
 
 
         <!-- Right Sidebar - News Section -->
-        <aside id="rightpanel">
+        <!-- <aside id="rightpanel">
             <div class="news-section">
                 <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
 
@@ -160,13 +163,19 @@
                 </div>
 
             </div>
-        </aside>
+        </aside> -->
 
     </div>
 
     <!-- Footer -->
-    <footer id="footer" class="center">
-        <p>&copy; 2023 University of Louisiana at Monroe</p>
+    <footer id="footer" class="center"> <!-- Empty footer element -->
+        <script>
+            fetch('../components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script>
     </footer>
 
 </body>

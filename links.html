@@ -4,75 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Plant Ecology at ULM – Useful Links</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Plant Ecology at ULM – Flux Tower</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
     <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        /* Meta Navigation */
-        #metanav {
-            background-color: #2c3e50;
-            /* padding: 15px 0; */
-            text-align: center;
-        }
-
-        #metanav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        #metanav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
-        }
-
-        #metanav ul li a:hover {
-            color: #f39c12;
-        }
-
-        /* Content Wrapper */
-        .content-wrapper {
-            display: grid;
-            grid-template-columns: 200px 1fr 250px;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        /* Left Sidebar */
-        #leftnav {
-            background: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .left-images img {
-            width: 80%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        /* Main Content */
-        #maindisplay {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
 
         /* Links Styling */
         .links-section {
@@ -109,48 +49,11 @@
             color: #e67e22;
         }
 
-        /* Right Sidebar */
-        #rightpanel {
-            background: #f7f7f7;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .news-section h2 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-
-        .news-card {
-            background: white;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Footer */
-        #footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 20px;
-        }
-
-        #footer a {
-            color: #f39c12;
-            text-decoration: none;
-        }
-
-        #footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 
 <body>
+
     <!-- Meta Navigation (loaded via fetch) -->
     <header id="metanav">
         <script>
@@ -160,20 +63,26 @@
                     document.getElementById('metanav').innerHTML = data;
                 });
         </script>
+
     </header>
+
 
     <!-- Page Content Wrapper -->
     <div class="content-wrapper">
-
         <!-- Left Sidebar -->
         <aside id="leftnav">
-            <div class="left-images">
-                <img src="images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe Logo">
-                <img src="images/ulm-warhawks.jpeg" alt="ULM Warhawks">
-            </div>
+            <script>
+                fetch('../components/leftnav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('leftnav').innerHTML = data;
+                    });
+            </script>
         </aside>
 
-        <!-- Main Content -->
+
+        <!-- Main Content Area -->
+
         <main id="maindisplay">
             <section id="centertext">
                 <header>
@@ -185,7 +94,8 @@
                     <h3>🌿 Local</h3>
                     <ul>
                         <li><a href="http://www.ulm.edu/mnh/" target="_blank">ULM Museum of Natural History</a></li>
-                        <li><a href="http://www.friendsofblackbayou.org/" target="_blank">Black Bayou National Wildlife Refuge</a></li>
+                        <li><a href="http://www.friendsofblackbayou.org/" target="_blank">Black Bayou National Wildlife
+                                Refuge</a></li>
                     </ul>
                 </div>
 
@@ -193,9 +103,12 @@
                     <h3>📍 State and Regional</h3>
                     <ul>
                         <li><a href="http://lnps.org/" target="_blank">Louisiana Native Plant Society</a></li>
-                        <li><a href="http://www.labiologists.org/" target="_blank">Louisiana Association of Professional Biologists</a></li>
-                        <li><a href="http://www.laacademy.org/" target="_blank">Louisiana Academy of the Sciences</a></li>
-                        <li><a href="http://www.sebiologists.org/" target="_blank">Association of Southeastern Biologists</a></li>
+                        <li><a href="http://www.labiologists.org/" target="_blank">Louisiana Association of Professional
+                                Biologists</a></li>
+                        <li><a href="http://www.laacademy.org/" target="_blank">Louisiana Academy of the Sciences</a>
+                        </li>
+                        <li><a href="http://www.sebiologists.org/" target="_blank">Association of Southeastern
+                                Biologists</a></li>
                     </ul>
                 </div>
 
@@ -213,26 +126,21 @@
             </section>
         </main>
 
-        <!-- Right Sidebar -->
-        <aside id="rightpanel">
-            <div class="news-section">
-                <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
-                <div class="news-card">
-                    <h3>Conservation Talk</h3>
-                    <p>Dr. Bhattacharjee was invited to speak at the Balipara Foundation Awards in India on UAVs in conservation.</p>
-                </div>
-                <div class="news-card">
-                    <h3>Best Poster Award</h3>
-                    <p>Lab member, Melissa Bloch, wins Best Poster Award at Louisiana Association of Professional Biologists.</p>
-                </div>
-            </div>
-        </aside>
+
+
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <p>&copy; 2024 University of Louisiana at Monroe | <a href="#">Privacy Policy</a></p>
+    <!-- Footer (loaded via fetch) -->
+    <footer id="footer" class="center"> <!-- Empty footer element -->
+        <script>
+            fetch('../components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script>
     </footer>
+
 </body>
 
 </html>
