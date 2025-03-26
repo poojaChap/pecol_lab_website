@@ -45,7 +45,7 @@ body {
 /* --- Header & Navigation --- */
 /* Meta Navigation */
 #metanav {
-	background: linear-gradient(90deg, var(--primary-color), #900000);
+	background: linear-gradient(90deg, var(--primary-color), #3b0000);
 	/* padding: 10px 20px; */
 	text-align: right;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -535,7 +535,7 @@ th {
 /* --- Footer --- */
 footer,
 #footer {
-	background: #6f0808;
+	background: #3b0000;
 	color: #fff;
 	text-align: center;
 	padding: 5px;

@@ -14,135 +14,88 @@
 
 <body>
 
-    <!-- Meta Navigation (loaded via fetch) -->
-    <header id="metanav">
-        <script>
-            fetch('../components/navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('metanav').innerHTML = data;
-                });
-        </script>
-    </header>
+    <div id="content">
 
-    <!-- Page Content Wrapper -->
-    <div class="content-wrapper">
+        <!-- Meta Navigation (loaded via fetch) -->
+        <header id="metanav">
+            <script>
+                fetch('../components/navbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('metanav').innerHTML = data;
+                    });
+            </script>
+        </header>
 
-        <!-- Left Sidebar -->
-        <aside id="leftnav">
-            <div class="left-images">
-                <img src="../images/ULM Circle Logo.jpg" alt="University of Louisiana at Monroe Logo" width="119"
-                    height="118">
-                <img src="../images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85">
-            </div>
-        </aside>
+        <!-- Page Content Wrapper -->
+        <div class="content-wrapper">
 
-        <!-- Main Display Area -->
-        <main id="maindisplay">
+            <!-- Left Sidebar -->
+            <aside id="leftnav">
+                <div class="left-images">
+                    <img src="../images/ulm.logo.jpg" alt="University of Louisiana at Monroe Logo" width="119"
+                        height="118">
+                    <img src="../images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85">
+                </div>
+            </aside>
 
-            <!-- Secondary Navigation -->
-            <section id="topnav">
-                <ul>
-                    <li><a href="/Home/professional.html" class="nav-link"><i class="fas fa-briefcase"></i> Professional
-                            Preparation</a></li>
-                    <li><a href="/Home/past.html" class="nav-link"><i class="fas fa-history"></i> Past Appointments</a>
-                    </li>
-                    <li><a href="/Home/Publications.html" class="nav-link"><i class="fas fa-book-open"></i>
-                            Publications</a></li>
-                    <li><a href="/Home/Courses.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i>
-                            Courses</a></li>
-                    <li><a href="/Home/Other.html" class="nav-link"><i class="fas fa-handshake"></i> Collaborators</a>
-                    </li>
-                    <li><a href="/Home/Grants.html" class="nav-link"><i class="fas fa-award"></i> Grants</a></li>
-                </ul>
-            </section>
+            <!-- Main Display Area -->
+            <main id="maindisplay">
 
-
-
-            <!-- Center Content -->
-            <div id="centertext" class="center">
-                <h2>Collaborators</h2>
-                <p>
-                <h3>&nbsp;</h3>
-                <p>Dr. Loren Smith - Oklahoma State University<br>
-                    Dr. David Haukos - Kansas State University<br>
-                    Dr. Davis Pritchett - University of Arkansas at Fort Smith<br>
-                    Dr. Asko Noormets - North Carolina State University<br>
-                    Dr. Lynn Clark - College of Education, University of Louisiana at Monroe<br>
-                    Dr. Anne Case-Hanks - Dept. of Atmospheric Sciences, University of Louisiana at Monroe<br>
-                    Dr. Loren Hayes - University of Tennessee at Chattanooga</p>
-                </p>
-            </div>
+                <!-- Secondary Navigation -->
+                <section id="topnav">
+                    <ul>
+                        <li><a href="/Home/professional.html" class="nav-link"><i class="fas fa-briefcase"></i>
+                                Professional
+                                Preparation</a></li>
+                        <li><a href="/Home/past.html" class="nav-link"><i class="fas fa-history"></i> Past
+                                Appointments</a>
+                        </li>
+                        <li><a href="/Home/Publications.html" class="nav-link"><i class="fas fa-book-open"></i>
+                                Publications</a></li>
+                        <li><a href="/Home/Courses.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i>
+                                Courses</a></li>
+                        <li><a href="/Home/Other.html" class="nav-link"><i class="fas fa-handshake"></i>
+                                Collaborators</a>
+                        </li>
+                        <li><a href="/Home/Grants.html" class="nav-link"><i class="fas fa-award"></i> Grants</a></li>
+                    </ul>
+                </section>
 
 
 
-        </main>
-
-        <!-- Right Sidebar: News Section -->
-        <aside id="rightpanel">
-            <div class="news-section">
-                <h2><i class="fas fa-newspaper"></i> Lab Updates</h2>
-
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>Invited Speaker</h3>
-                        <p>Dr. Bhattacharjee will travel to India as an invited speaker on the use of UAVs in
-                            conservation.</p>
-                    </div>
+                <!-- Center Content -->
+                <div id="centertext" class="center">
+                    <h2>Collaborators</h2>
+                    <p>
+                    <h3>&nbsp;</h3>
+                    <p>Dr. Loren Smith - Oklahoma State University<br>
+                        Dr. David Haukos - Kansas State University<br>
+                        Dr. Davis Pritchett - University of Arkansas at Fort Smith<br>
+                        Dr. Asko Noormets - North Carolina State University<br>
+                        Dr. Lynn Clark - College of Education, University of Louisiana at Monroe<br>
+                        Dr. Anne Case-Hanks - Dept. of Atmospheric Sciences, University of Louisiana at Monroe<br>
+                        Dr. Loren Hayes - University of Tennessee at Chattanooga</p>
+                    </p>
                 </div>
 
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>Best Poster Award</h3>
-                        <p>Plant Ecology Lab member, Melissa Bloch, wins the Best Poster Award at the Louisiana
-                            Association of Professional Biologists Annual Meeting in Baton Rouge.</p>
-                    </div>
-                </div>
 
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>Research Presentation</h3>
-                        <p>Graduate student Tanner Hart presents his research at the Louisiana Association of
-                            Professional Biologists in Baton Rouge.</p>
-                    </div>
-                </div>
 
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>Research Grant Awarded</h3>
-                        <p>Dr. Bhattacharjee was awarded a travel grant to attend the AMERIFLUX PI meeting in Golden,
-                            Colorado.</p>
-                    </div>
-                </div>
+            </main>
 
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>New Lab Member</h3>
-                        <p>ULM Biology undergrad Nicholas ("Nick") Carlson joins the Plant Ecology Lab.</p>
-                    </div>
-                </div>
 
-                <div class="news-card">
-                    <div class="news-content">
-                        <h3>Research in the Himalayas</h3>
-                        <p>
-                            <a
-                                href="http://www.ulm.edu/news/2016/1012-ulm-students-research-takes-her-to-the-himalayas.html">
-                                ULM Biology undergrad, Melissa Bloch, travels to India on a 1-month research project in
-                                the Himalayas. She was offered an internship by ATREE.
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </aside>
-
+        </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer (loaded via fetch) -->
     <footer id="footer" class="center">
-        <p>&copy; 2016 University of Louisiana at Monroe</p>
+        <script>
+            fetch('../components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script>
     </footer>
 
 </body>
