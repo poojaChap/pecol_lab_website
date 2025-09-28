@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plant Ecology at ULM – Flux Tower</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Swiper Container */
+        .swiper-container {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Individual Slide */
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .swiper-slide:hover {
+            transform: scale(1.05);
+        }
+
+        /* Student Image */
+        .student-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Student Name */
+        .student-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #590100;
+        }
+
+        /* Research Focus & Projects */
+        .research-interests,
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        /* Highlighted Section */
+        .highlight-text {
+            font-weight: bold;
+            color: #77000F;
+        }
+
+        /* Swiper Arrows */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #590100;
+        }
+
+        /* Swiper Pagination Dots */
+        .swiper-pagination-bullet {
+            background-color: #77000F;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Meta Navigation (loaded via fetch) -->
+    <header id="metanav">
+        <script>
+            fetch('../components/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('metanav').innerHTML = data;
+                });
+        </script>
+
+    </header>
+
+
+    <!-- Page Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Left Sidebar -->
+        <aside id="leftnav">
+            <ul>
+                <li><img src="../images/ulm.logo.jpg" alt="ULM Logo" width="119" height="118"></li>
+                <li><img src="../images/ulm-warhawks.jpeg" alt="ULM Warhawks" width="125" height="85"></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="maindisplay">
+
+
+            <!-- Secondary Navigation -->
+            <section id="topnav">
+                <ul>
+                    <li><a href="../MyLab/research.html"><i class="fas fa-flask"></i> Research Interests</a></li>
+                    <li><a href="graduates.html"><i class="fas fa-user-graduate"></i> Graduate Students</a></li>
+                    <li><a href="undergraduates.html"><i class="fas fa-users"></i> Undergraduates</a></li>
+                </ul>
+            </section>
+
+            <article id="centertext">
+                <header class="content-header">
+                    <h2><i class="fas fa-user-graduate"></i> Graduate Students</h2>
+                </header>
+
+                <!-- Swiper Carousel -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <!-- Student Profile: Grant Wallace Erbelding -->
+                        <div class="swiper-slide">
+                            <img src="../images/Grant.png" alt="Grant Wallace Erbelding" class="student-image">
+                            <h3 class="student-name">Grant Wallace Erbelding</h3>
+                            <p class="bio-text">Graduate Researcher specializing in aerial imagery utilization for
+                                Bottomland Hardwood Forest characterization.</p>
+                            <h4 class="section-heading"><i class="fas fa-flask"></i> Research Focus</h4>
+                            <ul class="research-interests">
+                                <li>Aerial Imagery Utilization</li>
+                                <li>Bottomland Hardwood Forest Characterization</li>
+                                <li>Machine-Learning Applications</li>
+                            </ul>
+                            <h4 class="section-heading"><i class="fas fa-project-diagram"></i> Current Project</h4>
+                            <p class="highlight-text">Developing machine-learning models to detect vegetation stress
+                                in canopy ecosystems.</p>
+                        </div>
+
+
+                        
+                        <!-- Student Profile: Brock -->
+                        <div class="swiper-slide">
+                            <img src="../images/Brock.png" alt="Brock Eppinette" class="student-image">
+                            <h3 class="student-name">Brock Eppinette</h3>
+                            <p class="bio-text">Senior Toxicology major at ULM, specializing in laboratory research
+                                methodologies.</p>
+                            <h4 class="section-heading"><i class="fas fa-microscope"></i> Lab Activities</h4>
+                            <ul class="project-list">
+                                <li>Evaluating the use of spectral properties to identify different species and detect
+                                    stress in pine trees. </li>
+                            </ul>
+                            <h4 class="section-heading"><i class="fas fa-seedling"></i> Current Initiative</h4>
+                            <p class="highlight-text">Spectral analysis for species identification and stress detection.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Swiper Pagination & Navigation -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </article>
+        </main>
+
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2023 University of Louisiana at Monroe</p>
+    </footer>
+
+</body>
+
+</html>
